@@ -2,18 +2,24 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-family-logo1: "Mali", cursive;
+$font-family-logo2: "Open Sans", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #3490dc;
-$indigo: #6574cd;
+$blue: #008aff;
+$darken-blue: #006ecc;
+$indigo: #152c5b !important;
 $purple: #9561e2;
 $pink: #f66d9b;
 $red: #e3342f;
+$darken-red: #ca312b;
 $orange: #f6993f;
 $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$gray: rgba(31, 45, 61, 0.6);
+$light-gray: #718096;
