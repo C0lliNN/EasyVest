@@ -1,10 +1,12 @@
 {
-    "name": "laravel/laravel",
+    "name": "Easy Vest",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "A Platform for Students and Teachers.",
     "keywords": [
         "framework",
-        "laravel"
+        "EAD",
+        "Question",
+        "List"
     ],
     "license": "MIT",
     "require": {
