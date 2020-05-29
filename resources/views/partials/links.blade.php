@@ -1,11 +1,11 @@
 @auth
     <li>
-        <a href="#">
+        <a href="{{ route('questions.index') }}">
             Questões
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="{{ route('lists.index') }}">
             Listas
         </a>
     </li>

@@ -23,3 +23,6 @@ Route::get('/', 'HomeController')
 Route::get('/dashboard', 'DashboardController')
     ->name('dashboard')
     ->middleware(['auth']);
+
+Route::view('questions/{path?}', 'questions')->name('questions.index');
+Route::get('lists', 'ListsController@index')->name('lists.index');
