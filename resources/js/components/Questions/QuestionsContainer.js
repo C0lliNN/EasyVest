@@ -1,13 +1,31 @@
 import React from "react";
+import QuestionForm from "./QuestionForm";
 import { Route, Switch, Link, NavLink } from "react-router-dom";
 
-const Questions = props => {
+const QuestionsContainer = () => {
     return (
         <section className="questions container">
-            <h3>Questions</h3>
+            <Switch>
+                <Route
+                    path="/questions/bookmarked"
+                    render={() => <h3>Favoritos</h3>}
+                />
+                <Route
+                    path="/questions/answered"
+                    render={() => <h3>Questões Respondidas</h3>}
+                />
+                <Route
+                    path="/questions/create"
+                    render={() => <h3>Nova Questão</h3>}
+                />
+                <Route
+                    path="/questions"
+                    render={() => <h3>Minhas Questões</h3>}
+                />
+            </Switch>
 
             <div className="row">
-                <div className="col m5">
+                <div className="col s12 m5">
                     <ul className="collection">
                         <li className="collection-item flex">
                             <input
@@ -61,7 +79,7 @@ const Questions = props => {
                         </Link>
                     </div>
                 </div>
-                <div className="col m7 card">
+                <div className="col s12 m7 card">
                     <Switch>
                         <Route
                             path="/questions/bookmarked"
@@ -73,7 +91,7 @@ const Questions = props => {
                         />
                         <Route
                             path="/questions/create"
-                            render={() => <p>Nova Questão</p>}
+                            component={QuestionForm}
                         />
                         <Route
                             path="/questions"
@@ -86,4 +104,4 @@ const Questions = props => {
     );
 };
 
-export default Questions;
+export default QuestionsContainer;

@@ -1,9 +1,17 @@
 import React, { useState, lazy, Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Spinner from "./Spinner";
+import Spinner from "./UI/Spinner";
 
-const Questions = lazy(() => import("./Questions"));
-const Lists = lazy(() => import("./Lists"));
+import axios from "axios";
+
+axios.defaults.baseURL = "/api";
+axios.defaults.headers.common["Authorization"] =
+    "Bearer " + document.querySelector("#api_token").value;
+
+/* eslint-disable */
+const Questions = lazy(() => import("./Questions/QuestionsContainer"));
+const Lists = lazy(() => import("./Lists/ListsContainer"));
+/* eslint-enable */
 
 const App = () => {
     return (

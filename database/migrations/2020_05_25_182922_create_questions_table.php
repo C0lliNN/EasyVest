@@ -29,7 +29,7 @@ class CreateQuestionsTable extends Migration
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade');
-            $table->foreignId('subject_id')->nullable();
+            $table->foreignId('subject_id');
             $table
                 ->foreign('subject_id')
                 ->references('id')

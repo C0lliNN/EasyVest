@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', 'HomeController')
+Route::view('/', 'home')
     ->name('home')
     ->middleware(['guest']);
 
@@ -24,5 +24,5 @@ Route::get('/dashboard', 'DashboardController')
     ->name('dashboard')
     ->middleware(['auth']);
 
-Route::view('questions/{path?}', 'questions')->name('questions.index');
-Route::get('lists', 'ListsController@index')->name('lists.index');
+Route::view('questions/{path?}', 'questions')->name('questions');
+Route::view('lists/{path?}', 'lists')->name('lists');

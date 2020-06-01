@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\API\QuestionsController;
+use App\Http\Controllers\API\SubjectsController;
+use App\Http\Resources\SubjectCollection;
+use App\Subject;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware(['auth:api'])->group(function() {
+    Route::get('/subjects', 'API\SubjectsController@index');
+    Route::apiResource('/questions', 'API\QuestionsController');
 });

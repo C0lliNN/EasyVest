@@ -1,5 +1,6 @@
 // Variables
 @import "variables";
+@import "materialize_overrides";
 
 html {
     min-height: 100%;
@@ -328,17 +329,117 @@ footer {
                 color: rgba(0, 0, 0, 0.6);
                 font-size: 1.1em;
             }
+            &:focus {
+                border-bottom-color: $blue !important;
+                box-shadow: 0 1px 0 0 $blue !important;
+            }
         }
         i {
             font-size: 1.8em !important;
         }
     }
 
-    .btn.green {
+    .btn.green,
+    .btn.orange {
         display: block;
         width: 100%;
         text-transform: none;
         font-size: 1.2em;
+    }
+
+    .btn.green {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .card {
+        padding: 20px;
+
+        p.label {
+            font-size: 1.3em;
+            font-weight: 700;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .content {
+            .ck-editor__editable {
+                min-height: 130px !important;
+            }
+        }
+
+        .alternative {
+            .ck-editor__editable {
+                min-height: 80px !important;
+            }
+        }
+
+        select.browser-default {
+            font-size: 1.3em;
+        }
+
+        .input-tag {
+            background: white;
+            border: 1px solid #d6d6d6;
+            border-radius: 2px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px 5px 0;
+            input {
+                margin-bottom: 0px !important;
+                height: 2.4rem;
+                &:focus {
+                    border-bottom-color: $blue !important;
+                    box-shadow: 0 1px 0 0 $blue !important;
+                }
+            }
+            .input-tag__tags {
+                display: inline-flex;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                li {
+                    align-items: center;
+                    background: $blue;
+                    border-radius: 2px;
+                    color: white;
+                    display: flex;
+                    font-weight: 300;
+                    list-style: none;
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    padding: 5px 10px;
+                    button {
+                        align-items: center;
+                        appearance: none;
+                        background: rgba(0, 0, 0, 0.12);
+                        border: none;
+                        border-radius: 50%;
+                        color: white;
+                        cursor: pointer;
+                        display: inline-flex;
+                        font-size: 12px;
+                        height: 15px;
+                        justify-content: center;
+                        line-height: 0;
+                        margin-left: 8px;
+                        padding: 0;
+                        width: 15px;
+                        .material-icons {
+                            font-size: 13px !important;
+                        }
+                    }
+                }
+                li.input-tag__tags__input {
+                    background: none;
+                    flex-grow: 1;
+                    padding: 0;
+                }
+            }
+        }
     }
 }
 
