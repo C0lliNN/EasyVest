@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Spinner from "./UI/Spinner";
 
@@ -8,10 +8,9 @@ axios.defaults.baseURL = "/api";
 axios.defaults.headers.common["Authorization"] =
     "Bearer " + document.querySelector("#api_token").value;
 
-/* eslint-disable */
 const Questions = lazy(() => import("./Questions/QuestionsContainer"));
+const FullQuestion = lazy(() => import("./Questions/FullQuestionContainer"));
 const Lists = lazy(() => import("./Lists/ListsContainer"));
-/* eslint-enable */
 
 const App = () => {
     return (
@@ -22,6 +21,22 @@ const App = () => {
                     render={() => (
                         <Suspense fallback={<Spinner />}>
                             <Lists />
+                        </Suspense>
+                    )}
+                />
+                <Route
+                    path="/questions/:question/edit"
+                    render={() => (
+                        <Suspense fallback={<Spinner />}>
+                            <Questions />
+                        </Suspense>
+                    )}
+                />
+                <Route
+                    path="/questions/:question"
+                    render={() => (
+                        <Suspense fallback={<Spinner />}>
+                            <FullQuestion />
                         </Suspense>
                     )}
                 />

@@ -13,4 +13,16 @@ const mix = require("laravel-mix");
 
 mix.setPublicPath("./public")
     .sass("resources/sass/app.scss", "public/css")
-    .react("resources/js/app.js", "public/js");
+    .react("resources/js/app.js", "public/js")
+    .webpackConfig({
+        module: {
+            rules: [
+                {
+                    enforce: "pre",
+                    test: /\.(js|vue)$/,
+                    exclude: /node_modules/,
+                    loader: "eslint-loader"
+                }
+            ]
+        }
+    });

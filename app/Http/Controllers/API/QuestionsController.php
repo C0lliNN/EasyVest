@@ -4,10 +4,12 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateQuestionRequest;
+use App\Http\Resources\Question as ResourcesQuestion;
 use App\Http\Resources\QuestionsCollection;
 use App\Question;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class QuestionsController extends Controller
 {
@@ -18,7 +20,12 @@ class QuestionsController extends Controller
      */
     public function index()
     {
-        return new QuestionsCollection(Question::all());
+        $questions = DB::table('questions')
+            ->join('subjects', 'questions.subject_id', '=', 'subjects.id')
+            ->select('questions.id', 'questions.content', 'questions.tags', 'subjects.name as subject')
+            ->get();
+
+        return new QuestionsCollection($questions);
     }
 
     /**
@@ -39,7 +46,7 @@ class QuestionsController extends Controller
             'subject_id' => $request->subject,
             'user_id' => Auth::id(),
             'correctAlternative' => $request->correctAlternative,
-            'tags' => implode(',', $request->tags)
+            'tags' => implode(', ', $request->tags)
         ]);
 
         return response('success', 200);
@@ -51,9 +58,9 @@ class QuestionsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Question $question)
     {
-        //
+        return new ResourcesQuestion($question);
     }
 
     /**

@@ -1,11 +1,19 @@
-import React from "react";
-import QuestionForm from "./QuestionForm";
+import React, { Suspense, lazy } from "react";
+
 import { Route, Switch, Link, NavLink } from "react-router-dom";
+import Spinner from "../UI/Spinner";
+
+const MyQuestions = lazy(() => import("./MyQuestions"));
+const QuestionForm = lazy(() => import("./QuestionForm"));
 
 const QuestionsContainer = () => {
     return (
         <section className="questions container">
             <Switch>
+                <Route
+                    path="/questions/:question/edit"
+                    render={() => <h3>Editar Questão</h3>}
+                />
                 <Route
                     path="/questions/bookmarked"
                     render={() => <h3>Favoritos</h3>}
@@ -82,6 +90,14 @@ const QuestionsContainer = () => {
                 <div className="col s12 m7 card">
                     <Switch>
                         <Route
+                            path="/questions/:question/edit"
+                            render={() => (
+                                <Suspense fallback={<Spinner />}>
+                                    <QuestionForm />
+                                </Suspense>
+                            )}
+                        />
+                        <Route
                             path="/questions/bookmarked"
                             render={() => <p>Favoritos</p>}
                         />
@@ -91,11 +107,19 @@ const QuestionsContainer = () => {
                         />
                         <Route
                             path="/questions/create"
-                            component={QuestionForm}
+                            render={() => (
+                                <Suspense fallback={<Spinner />}>
+                                    <QuestionForm />
+                                </Suspense>
+                            )}
                         />
                         <Route
                             path="/questions"
-                            render={() => <p>Minhas Questões</p>}
+                            render={() => (
+                                <Suspense fallback={<Spinner />}>
+                                    <MyQuestions />
+                                </Suspense>
+                            )}
                         />
                     </Switch>
                 </div>

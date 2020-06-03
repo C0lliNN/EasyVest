@@ -1,6 +1,6 @@
 import React from "react";
 
-const ListsContainer = props => {
+const ListsContainer = () => {
     return <h1>Lists</h1>;
 };
 

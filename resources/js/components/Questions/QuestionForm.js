@@ -27,16 +27,17 @@ const QuestionForm = () => {
 
     useEffect(() => {
         setIsLoading(true);
+
         axios
             .get("/subjects")
             .then(response => {
                 setAvailableSubjects(response.data.data);
                 const modal = document.querySelector("#modal");
+                // eslint-disable-next-line
                 const instance = M.Modal.init(modal, {});
                 setModalInstance(instance);
             })
             .catch(error => {
-                console.error(error);
                 setError(error);
             })
             .finally(() => {
