@@ -2,6 +2,7 @@
 
 @section('content')
     <input type="hidden" value="{{ Auth::user()->api_token }}" id="api_token"/>
+    <input type="hidden" value="{{ Auth::id() }}" id="user_id"/>
     <div id="modal" class="modal">
         <div class="modal-content">
             <h4></h4>

@@ -15,18 +15,8 @@ class CreateListQuestionTable extends Migration
     {
         Schema::create('list_question', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('question_id');
-            $table
-                ->foreign('question_id')
-                ->references('id')
-                ->on('questions')
-                ->onDelete('cascade');
-            $table->foreignId('list_id');
-            $table
-                ->foreign('list_id')
-                ->references('id')
-                ->on('lists')
-                ->onDelete('cascade');
+            $table->foreignId('question_id')->constrained();
+            $table->foreignId('list_id')->constrained();
             $table->timestamps();
         });
     }

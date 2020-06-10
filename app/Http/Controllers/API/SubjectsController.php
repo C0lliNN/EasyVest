@@ -9,8 +9,8 @@ use App\Subject;
 
 class SubjectsController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         return new SubjectCollection(Subject::all());
-
     }
 }

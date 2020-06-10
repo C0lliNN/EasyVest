@@ -42,7 +42,7 @@
                     <a
                         href="{{ route('login') }}"
                         class="btn-flat btn-large"
-                        target="_blank"
+                        target="_blank" 
                         >Login</a
                     >
                 </div>

@@ -15,7 +15,7 @@ class CreateListUserTable extends Migration
     {
         Schema::create('list_user', function (Blueprint $table) {
             $table->id();
-            $table->boolean('owner')->default(false);
+            $table->enum('relation', ['answer', 'owner', 'bookmark']);
             $table->foreignId('user_id')->constrained();
             $table->foreignId('list_id')->constrained();
             $table->timestamps();

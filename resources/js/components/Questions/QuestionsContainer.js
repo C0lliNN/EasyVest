@@ -1,12 +1,26 @@
-import React, { Suspense, lazy } from "react";
+import PropTypes from "prop-types";
+import React, { Suspense, lazy, useRef } from "react";
 
-import { Route, Switch, Link, NavLink } from "react-router-dom";
+import { Route, Switch, Link, NavLink, withRouter } from "react-router-dom";
 import Spinner from "../UI/Spinner";
+import EditQuestion from "./EditQuestion";
 
-const MyQuestions = lazy(() => import("./MyQuestions"));
+const QuestionsList = lazy(() => import("./QuestionsList/QuestionsList"));
 const QuestionForm = lazy(() => import("./QuestionForm"));
 
-const QuestionsContainer = () => {
+const QuestionsContainer = (props) => {
+    const searchInputRef = useRef();
+
+    const searchHandler = (event) => {
+        event.preventDefault();
+        const query = searchInputRef.current.value;
+        if (query && query.trim()) {
+            props.history.push(`/questions?query=${query}`);
+        } else {
+            props.history.push("/questions");
+        }
+    };
+
     return (
         <section className="questions container">
             <Switch>
@@ -35,14 +49,17 @@ const QuestionsContainer = () => {
             <div className="row">
                 <div className="col s12 m5">
                     <ul className="collection">
-                        <li className="collection-item flex">
-                            <input
-                                type="text"
-                                placeholder="Procurar Questões"
-                            />
-                            <button className="btn btn-primary z-depth-0">
-                                <i className="material-icons">search</i>
-                            </button>
+                        <li className="collection-item">
+                            <form onSubmit={searchHandler} className="flex">
+                                <input
+                                    type="text"
+                                    placeholder="Procurar Questões"
+                                    ref={searchInputRef}
+                                />
+                                <button className="btn btn-primary z-depth-0">
+                                    <i className="material-icons">search</i>
+                                </button>
+                            </form>
                         </li>
 
                         <NavLink
@@ -58,7 +75,7 @@ const QuestionsContainer = () => {
                         </NavLink>
 
                         <NavLink
-                            to="/questions/bookmarked"
+                            to="/questions/bookmarks"
                             className="collection-item"
                             activeClassName="active"
                             exact
@@ -93,18 +110,11 @@ const QuestionsContainer = () => {
                             path="/questions/:question/edit"
                             render={() => (
                                 <Suspense fallback={<Spinner />}>
-                                    <QuestionForm />
+                                    <EditQuestion />
                                 </Suspense>
                             )}
                         />
-                        <Route
-                            path="/questions/bookmarked"
-                            render={() => <p>Favoritos</p>}
-                        />
-                        <Route
-                            path="/questions/answered"
-                            render={() => <p>Respondidas</p>}
-                        />
+
                         <Route
                             path="/questions/create"
                             render={() => (
@@ -117,7 +127,7 @@ const QuestionsContainer = () => {
                             path="/questions"
                             render={() => (
                                 <Suspense fallback={<Spinner />}>
-                                    <MyQuestions />
+                                    <QuestionsList />
                                 </Suspense>
                             )}
                         />
@@ -128,4 +138,10 @@ const QuestionsContainer = () => {
     );
 };
 
-export default QuestionsContainer;
+QuestionsContainer.propTypes = {
+    history: PropTypes.shape({
+        push: PropTypes.func,
+    }),
+};
+
+export default withRouter(QuestionsContainer);

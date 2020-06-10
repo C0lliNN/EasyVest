@@ -1,27 +1,44 @@
-import React, { useState, useRef, useEffect } from "react";
+import PropTypes from "prop-types";
+import React, { useState, useEffect } from "react";
 import MyCKEditor from "../UI/MyCKEditor";
 import InputTag from "../UI/InputTag";
 import axios from "axios";
 import Spinner from "../UI/Spinner";
 import ErrorMessage from "../UI/ErrorMessage";
 
-const QuestionForm = () => {
+const QuestionForm = props => {
+    const { question } = props;
+
     const [isLoading, setIsLoading] = useState();
     const [error, setError] = useState();
 
-    const [content, setContent] = useState();
-    const [alternativeA, setAlternativeA] = useState();
-    const [alternativeB, setAlternativeB] = useState();
-    const [alternativeC, setAlternativeC] = useState();
-    const [alternativeD, setAlternativeD] = useState();
-    const [alternativeE, setAlternativeE] = useState();
+    const [content, setContent] = useState(question ? question.content : null);
 
-    const correctAlternativeRef = useRef();
-    const selectedSubjectRef = useRef();
+    const [alternativeA, setAlternativeA] = useState(
+        question ? question.alternativeA : null
+    );
+    const [alternativeB, setAlternativeB] = useState(
+        question ? question.alternativeB : null
+    );
+    const [alternativeC, setAlternativeC] = useState(
+        question ? question.alternativeC : null
+    );
+    const [alternativeD, setAlternativeD] = useState(
+        question ? question.alternativeD : null
+    );
+    const [alternativeE, setAlternativeE] = useState(
+        question ? question.alternativeE : null
+    );
+    const [correctAlternative, setCorrectAlternative] = useState(
+        question ? question.correctAlternative : ""
+    );
+    const [subject, setSubject] = useState(question ? question.subject.id : "");
 
     const [availableSubjects, setAvailableSubjects] = useState([]);
 
-    const [tags, setTags] = useState([]);
+    const [tags, setTags] = useState(
+        question ? question.tags.split(",").map(tag => tag.trim()) : []
+    );
 
     const [modalInstance, setModalInstance] = useState();
 
@@ -95,12 +112,12 @@ const QuestionForm = () => {
             errorMessage = "O campo 'Alternativa D' precisa ser preenchido";
         }
 
-        if (!errorFounded && !correctAlternativeRef.current.value) {
+        if (!errorFounded && !correctAlternative) {
             errorFounded = true;
             errorMessage = "Uma alternativa correta precisa ser selecionada";
         }
 
-        if (!errorFounded && !selectedSubjectRef.current.value) {
+        if (!errorFounded && !subject) {
             errorFounded = true;
             errorMessage = "Uma matéria precisa ser selecionada";
         }
@@ -110,7 +127,7 @@ const QuestionForm = () => {
         if (
             !errorFounded &&
             (!alternativeE || !auxDiv.innerText.trim()) &&
-            correctAlternativeRef.current.value === "E"
+            correctAlternative === "E"
         ) {
             errorFounded = true;
             errorMessage =
@@ -128,21 +145,30 @@ const QuestionForm = () => {
                 alternativeC: alternativeC,
                 alternativeD: alternativeD,
                 alternativeE: alternativeE,
-                correctAlternative: correctAlternativeRef.current.value,
-                subject: selectedSubjectRef.current.value,
+                correctAlternative: correctAlternative,
+                subject: subject,
                 tags: tags
             };
 
             setIsLoading(true);
 
-            axios
-                .post("/questions", data)
+            let request = null;
+
+            if (question) {
+                request = axios.put(`/questions/${question.id}`, data);
+            } else {
+                request = axios.post("/questions", data);
+            }
+
+            request
                 .then(response => {
                     if (response.status === 200) {
+                        const operation = question ? "atualizada" : "criada";
+
                         setupModal(
-                            "Questão criada com Sucesso!",
+                            `Questão ${operation} com Sucesso!`,
                             "green-text",
-                            "Sua questão foi criada e já está disponível na sessão 'Minhas Questões'"
+                            `Sua questão foi ${operation} e já está disponível na sessão 'Minhas Questões'`
                         );
                         modalInstance.open();
                     }
@@ -157,6 +183,18 @@ const QuestionForm = () => {
         }
     };
 
+    const clearFormHandler = () => {
+        setContent("");
+        setAlternativeA("");
+        setAlternativeB("");
+        setAlternativeC("");
+        setAlternativeD("");
+        setAlternativeE("");
+        setCorrectAlternative("");
+        setSubject("");
+        setTags([]);
+    };
+
     let uiContent = null;
 
     if (isLoading) {
@@ -168,51 +206,70 @@ const QuestionForm = () => {
             <div>
                 <div className="content">
                     <p className="label">Conteúdo</p>
-                    <MyCKEditor data={content} setData={setContent} />
+                    <MyCKEditor content={content} setData={setContent} />
                 </div>
                 <div className="alternative">
                     <p className="label">Alternativa A</p>
-                    <MyCKEditor data={alternativeA} setData={setAlternativeA} />
+                    <MyCKEditor
+                        content={alternativeA}
+                        setData={setAlternativeA}
+                    />
                 </div>
                 <div className="alternative">
                     <p className="label">Alternativa B</p>
-                    <MyCKEditor data={alternativeB} setData={setAlternativeB} />
+                    <MyCKEditor
+                        content={alternativeB}
+                        setData={setAlternativeB}
+                    />
                 </div>
                 <div className="alternative">
                     <p className="label">Alternativa C</p>
-                    <MyCKEditor data={alternativeC} setData={setAlternativeC} />
+                    <MyCKEditor
+                        content={alternativeC}
+                        setData={setAlternativeC}
+                    />
                 </div>
                 <div className="alternative">
                     <p className="label">Alternativa D</p>
-                    <MyCKEditor data={alternativeD} setData={setAlternativeD} />
+                    <MyCKEditor
+                        content={alternativeD}
+                        setData={setAlternativeD}
+                    />
                 </div>
                 <div className="alternative">
                     <p className="label">Alternativa E (Opcional)</p>
-                    <MyCKEditor data={alternativeE} setData={setAlternativeE} />
+                    <MyCKEditor
+                        content={alternativeE}
+                        setData={setAlternativeE}
+                    />
                 </div>
 
                 <div>
                     <p className="label">Alternativa Correta</p>
                     <select
                         className="browser-default"
-                        ref={correctAlternativeRef}
+                        onChange={event =>
+                            setCorrectAlternative(event.target.value)
+                        }
+                        value={correctAlternative}
                     >
                         <option disabled selected value="">
                             Selecione uma Alternativa
                         </option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                        <option value="E">E</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
                     </select>
                 </div>
                 <div>
                     <p className="label">Matéria</p>
 
                     <select
-                        ref={selectedSubjectRef}
+                        onChange={event => setSubject(event.target.value)}
                         className="browser-default"
+                        value={subject}
                     >
                         <option disabled selected value="">
                             Selecione uma Matéria
@@ -230,13 +287,35 @@ const QuestionForm = () => {
                     <InputTag tags={tags} setTags={setTags} />
                 </div>
                 <button className="btn green" onClick={createQuestionHandler}>
-                    Criar
+                    {question ? "Salvar" : "Criar"}
                 </button>
+                <div className="btn orange" onClick={clearFormHandler}>
+                    Limpar
+                </div>
             </div>
         );
     }
 
     return <div>{uiContent}</div>;
+};
+
+QuestionForm.propTypes = {
+    question: PropTypes.shape({
+        alternativeA: PropTypes.any,
+        alternativeB: PropTypes.any,
+        alternativeC: PropTypes.any,
+        alternativeD: PropTypes.any,
+        alternativeE: PropTypes.any,
+        content: PropTypes.any,
+        correctAlternative: PropTypes.any,
+        id: PropTypes.any,
+        subject: PropTypes.shape({
+            id: PropTypes.any
+        }),
+        tags: PropTypes.shape({
+            split: PropTypes.func
+        })
+    })
 };
 
 export default QuestionForm;

@@ -19,10 +19,10 @@ Route::view('/', 'home')
     ->name('home')
     ->middleware(['guest']);
 
-
 Route::get('/dashboard', 'DashboardController')
     ->name('dashboard')
     ->middleware(['auth']);
 
 Route::view('questions/{path?}', 'questions')->name('questions');
+Route::view('questions/{path?}/{path2?}', 'questions')->name('questions');
 Route::view('lists/{path?}', 'lists')->name('lists');

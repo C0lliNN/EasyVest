@@ -23,18 +23,7 @@ class CreateQuestionsTable extends Migration
             $table->text('alternativeD');
             $table->text('alternativeE')->nullable();
             $table->enum('correctAlternative', ['a', 'b', 'c', 'd', 'e']);
-            $table->foreignId('user_id');
-            $table
-                ->foreign('user_id')
-                ->references('id')
-                ->on('users')
-                ->onDelete('cascade');
-            $table->foreignId('subject_id');
-            $table
-                ->foreign('subject_id')
-                ->references('id')
-                ->on('subjects')
-                ->onDelete('cascade');
+            $table->foreignId('subject_id')->constrained();
             $table->timestamps();
         });
     }

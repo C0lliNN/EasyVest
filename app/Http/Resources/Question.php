@@ -23,10 +23,11 @@ class Question extends JsonResource
             'alternativeD' => $this->alternativeD,
             'alternativeE' => $this->alternativeE,
             'tags' => $this->tags,
-            'correctAlternative' => $this->correctAlternative,
-            'user' => $this->user,
             'subject' => $this->subject,
-            'created_at' => $this->created_at
+            'correctAlternative' => $this->correctAlternative,
+            'created_at' => $this->created_at,
+            'relations' => $this->relations,
+            'owner' => $this->owner,
         ];
     }
 }

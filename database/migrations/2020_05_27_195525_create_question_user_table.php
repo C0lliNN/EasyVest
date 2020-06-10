@@ -15,7 +15,7 @@ class CreateQuestionUserTable extends Migration
     {
         Schema::create('question_user', function (Blueprint $table) {
             $table->id();
-            $table->boolean('owner')->default(false);
+            $table->enum('relation', ['answer', 'owner', 'bookmark']);
             $table->foreignId('question_id')->constrained();
             $table->foreignId('user_id')->constrained();
             $table->timestamps();

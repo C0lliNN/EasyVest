@@ -1,35 +1,35 @@
-import PropTypes from "prop-types";
-import React, { useRef, useEffect } from "react";
+import PropTypes from 'prop-types';
+import React, { useRef, useEffect } from 'react';
 
-const FullQuestion = props => {
+const FullQuestion = (props) => {
     const { question, correct } = props;
 
     const alternativesData = [
         {
             ref: useRef(),
             text: question.alternativeA,
-            value: "a"
+            value: 'a',
         },
         {
             ref: useRef(),
             text: question.alternativeB,
-            value: "b"
+            value: 'b',
         },
         {
             ref: useRef(),
             text: question.alternativeC,
-            value: "c"
+            value: 'c',
         },
         {
             ref: useRef(),
             text: question.alternativeD,
-            value: "d"
+            value: 'd',
         },
         {
             ref: useRef(),
             text: question.alternativeE,
-            value: "e"
-        }
+            value: 'e',
+        },
     ];
 
     useEffect(() => {
@@ -43,20 +43,20 @@ const FullQuestion = props => {
         }
     }, [correct]);
 
-    const handleOnChange = event => {
+    const handleOnChange = (event) => {
         props.setSelectedAlternative(event.target.value);
     };
 
-    const alternatives = alternativesData.map(alternative => {
-        let className = "";
+    const alternatives = alternativesData.map((alternative) => {
+        let className = '';
 
         if (props.correct) {
             if (props.selectedAlternative === alternative.value) {
-                className = "red white-text";
+                className = 'red';
             }
 
             if (question.correctAlternative === alternative.value) {
-                className = "green white-text";
+                className = 'green';
             }
         }
 
@@ -74,12 +74,12 @@ const FullQuestion = props => {
                         ref={alternative.ref}
                         onChange={handleOnChange}
                     />
-                    <span
+                    <p
                         dangerouslySetInnerHTML={{
-                            __html: alternative.text
+                            __html: alternative.text,
                         }}
                         className={className}
-                    ></span>
+                    ></p>
                 </label>
             </p>
         );
@@ -105,10 +105,10 @@ FullQuestion.propTypes = {
         alternativeD: PropTypes.any,
         alternativeE: PropTypes.any,
         content: PropTypes.any,
-        correctAlternative: PropTypes.any
+        correctAlternative: PropTypes.any,
     }),
     selectedAlternative: PropTypes.any,
-    setSelectedAlternative: PropTypes.func
+    setSelectedAlternative: PropTypes.func,
 };
 
 export default FullQuestion;

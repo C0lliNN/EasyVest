@@ -15,7 +15,7 @@ class QuestionsCollection extends ResourceCollection
     public function toArray($request)
     {
         return [
-            'questions' => $this->collection
+            'questions' => $this->collection,
         ];
     }
 }

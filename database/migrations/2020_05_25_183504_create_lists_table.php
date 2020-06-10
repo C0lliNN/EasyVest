@@ -18,7 +18,7 @@ class CreateListsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('tags');
-            $table->foreignId('subject_id')->constrained();
+            $table->foreignId('subject_id')->nullable()->constrained();
             $table->timestamps();
         });
     }
