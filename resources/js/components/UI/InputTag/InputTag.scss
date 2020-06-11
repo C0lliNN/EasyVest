@@ -1,0 +1,63 @@
+@use '../../../../sass/variables';
+
+.InputTag {
+  background: white;
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 5px 0;
+  .Tags {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    li {
+      align-items: center;
+      background: variables.$blue;
+      border-radius: 2px;
+      color: white;
+      display: flex;
+      font-weight: 300;
+      list-style: none;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      padding: 5px 10px;
+    }
+    button {
+      align-items: center;
+      appearance: none;
+      background: rgba(0, 0, 0, 0.12);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 12px;
+      height: 15px;
+      justify-content: center;
+      line-height: 0;
+      margin-left: 8px;
+      padding: 0;
+      width: 15px;
+    }
+    .Icon {
+      font-size: 13px !important;
+    }
+    .Input {
+      background: none;
+      flex-grow: 1;
+      padding: 0;
+      input {
+        margin-bottom: 0px !important;
+        height: 2.4rem;
+        &:focus {
+          border-bottom-color: variables.$blue !important;
+          box-shadow: 0 1px 0 0 variables.$blue !important;
+        }
+      }
+    }
+  }
+}

@@ -4,15 +4,13 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateListQuestionTable extends Migration
-{
+class CreateListQuestionTable extends Migration {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::create('list_question', function (Blueprint $table) {
             $table->id();
             $table->foreignId('question_id')->constrained();
@@ -26,8 +24,7 @@ class CreateListQuestionTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down() {
         Schema::dropIfExists('list_question');
     }
 }

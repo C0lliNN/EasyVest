@@ -1,0 +1,49 @@
+@use 'mixins';
+@use 'variables';
+@use 'header';
+
+.form {
+  @include mixins.card;
+  h2 {
+    font-size: variables.$font-size1;
+    color: variables.$indigo;
+    font-weight: variables.$font-weight1;
+    text-align: center;
+  }
+  .btn-blue {
+    @include mixins.blue-button(block, default, default);
+    width: 100%;
+    font-size: variables.$font-size3;
+  }
+
+  label {
+    font-size: variables.$font-size4;
+    color: variables.$transparent-gray;
+    span {
+      color: variables.$transparent-gray;
+      font-size: variables.$font-size4 !important;
+    }
+  }
+
+  .input-field .material-icons {
+    color: variables.$transparent-gray;
+  }
+
+  .input-field input:focus + label {
+    color: variables.$blue !important;
+  }
+
+  .input-field .prefix.active {
+    color: variables.$blue !important;
+  }
+
+  .row .input-field input:focus {
+    border-bottom: 1px solid variables.$blue !important;
+    box-shadow: 0 1px 0 0 variables.$blue !important;
+  }
+
+  .blue-box[type='checkbox'].filled-in:checked + span:not(.lever):after {
+    border: 2px solid variables.$blue;
+    background-color: variables.$blue;
+  }
+}

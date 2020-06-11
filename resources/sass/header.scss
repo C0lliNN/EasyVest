@@ -1,0 +1,70 @@
+@use 'variables';
+@use 'mixins';
+
+.brand-logo {
+  font-weight: bold;
+  color: variables.$indigo;
+  font-family: variables.$body-font;
+  span {
+    color: variables.$blue;
+    font-family: variables.$logo-font;
+  }
+}
+
+.main-nav {
+  .sidenav-trigger {
+    color: variables.$blue;
+  }
+  .material-icons {
+    font-size: variables.$font-size1 !important;
+  }
+
+  ul a {
+    color: variables.$transparent-gray;
+    font-size: variables.$font-size4;
+  }
+
+  .btn-blue {
+    @include mixins.blue-button(inline, 8px 20px, default);
+  }
+
+  .btn-red {
+    @include mixins.red-button;
+  }
+}
+
+.sidenav {
+  h4 {
+    text-align: center;
+  }
+
+  .brand-logo {
+    font-size: variables.$font-size4;
+  }
+
+  ul a {
+    font-size: variables.$font-size3;
+    font-weight: 400;
+  }
+
+  .btn-blue {
+    @include mixins.blue-button(inline, 8px 20px, 30px);
+  }
+
+  .btn-red {
+    @include mixins.red-button;
+    margin-left: 30px;
+  }
+}
+
+.content {
+  .ck-editor__editable {
+    min-height: 130px !important;
+  }
+}
+
+.alternative {
+  .ck-editor__editable {
+    min-height: 80px !important;
+  }
+}

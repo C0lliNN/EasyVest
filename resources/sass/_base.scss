@@ -1,0 +1,11 @@
+@use 'variables';
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: variables.$body-bg;
+  font-family: variables.$body-font;
+  overflow-x: hidden;
+}

@@ -1,0 +1,63 @@
+@use '../../../../../sass/variables';
+
+.FullQuestion {
+  .Content p {
+    font-size: 1.4em;
+  }
+
+  .Alternative {
+    p {
+      font-size: 1.5em;
+      padding: 10px;
+      color: variables.$gray;
+      cursor: pointer;
+      margin: 0;
+
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+
+    input {
+      &:not(checked) + div {
+        color: variables.$gray;
+        &:hover {
+          background: variables.$white3;
+        }
+      }
+      &:checked + div {
+        background-color: variables.$blue;
+        p {
+          color: variables.$white1;
+        }
+        &:hover {
+          background-color: variables.$blue;
+        }
+      }
+    }
+
+    .Red,
+    .Red:hover,
+    .Red:active,
+    .Red:focus {
+      background-color: variables.$red;
+    }
+
+    .Green,
+    .Green:hover,
+    .Green:active,
+    .Green:focus {
+      background-color: variables.$green;
+    }
+
+    .Red,
+    .Green {
+      p {
+        color: variables.$white1;
+      }
+    }
+  }
+}

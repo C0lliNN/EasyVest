@@ -1,0 +1,79 @@
+@use 'variables';
+
+@mixin blue-button($display, $padding, $margin-left) {
+  background-color: variables.$blue;
+  border-radius: 5px;
+  text-transform: none;
+  color: variables.$body-bg !important;
+  display: $display;
+  padding: $padding;
+  margin-left: $margin-left;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($color: variables.$blue, $amount: 5) !important;
+  }
+}
+
+@mixin red-button {
+  background-color: variables.$red !important;
+  text-transform: none;
+  font-weight: variables.$font-weight1;
+  margin-left: 5px;
+  border-radius: 5px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: variables.$darken-red;
+  }
+}
+
+@mixin green-button {
+  background-color: variables.$green !important;
+  text-transform: none;
+  font-weight: variables.$font-weight1;
+  border-radius: 5px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($color: variables.$green, $amount: 3) !important;
+  }
+}
+
+@mixin orange-button {
+  background-color: variables.$orange !important;
+  text-transform: none;
+  font-weight: variables.$font-weight1;
+  border-radius: 5px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($color: variables.$orange, $amount: 3) !important;
+  }
+}
+
+@mixin card {
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@mixin block {
+  background-color: variables.$white2;
+  padding: 0px 20px;
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@mixin icon-button {
+  border: none;
+  background-color: transparent;
+  border-radius: 100%;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}

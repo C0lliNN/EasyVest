@@ -1,0 +1,292 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.brand-logo {
+  font-weight: bold;
+  color: #152c5b !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.brand-logo span {
+  color: #008aff;
+  font-family: "Mali", cursive;
+}
+
+.main-nav .sidenav-trigger {
+  color: #008aff;
+}
+
+.main-nav .material-icons {
+  font-size: 3em !important;
+}
+
+.main-nav ul a {
+  color: rgba(31, 45, 61, 0.6);
+  font-size: 1.1em;
+}
+
+.main-nav .btn-blue {
+  background-color: #008aff;
+  border-radius: 5px;
+  text-transform: none;
+  color: #f8fafc !important;
+  display: inline;
+  padding: 8px 20px;
+  margin-left: default;
+}
+
+.main-nav .btn-blue:hover,
+.main-nav .btn-blue:active,
+.main-nav .btn-blue:focus {
+  background-color: #007ce6 !important;
+}
+
+.main-nav .btn-red {
+  background-color: #e3342f !important;
+  text-transform: none;
+  font-weight: 500;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.main-nav .btn-red:hover,
+.main-nav .btn-red:active,
+.main-nav .btn-red:focus {
+  background-color: #ca312b;
+}
+
+.sidenav h4 {
+  text-align: center;
+}
+
+.sidenav .brand-logo {
+  font-size: 1.1em;
+}
+
+.sidenav ul a {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.sidenav .btn-blue {
+  background-color: #008aff;
+  border-radius: 5px;
+  text-transform: none;
+  color: #f8fafc !important;
+  display: inline;
+  padding: 8px 20px;
+  margin-left: 30px;
+}
+
+.sidenav .btn-blue:hover,
+.sidenav .btn-blue:active,
+.sidenav .btn-blue:focus {
+  background-color: #007ce6 !important;
+}
+
+.sidenav .btn-red {
+  background-color: #e3342f !important;
+  text-transform: none;
+  font-weight: 500;
+  margin-left: 5px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.sidenav .btn-red:hover,
+.sidenav .btn-red:active,
+.sidenav .btn-red:focus {
+  background-color: #ca312b;
+}
+
+.content .ck-editor__editable {
+  min-height: 130px !important;
+}
+
+.alternative .ck-editor__editable {
+  min-height: 80px !important;
+}
+
+.blue {
+  background-color: #008aff !important;
+}
+
+strong {
+  font-weight: bold !important;
+}
+
+.presentations {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.presentations h1 {
+  color: #152c5b !important;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.presentations h1 strong {
+  color: #008aff;
+}
+
+.presentations .btn-blue {
+  background-color: #008aff;
+  border-radius: 5px;
+  text-transform: none;
+  color: #f8fafc !important;
+  display: default;
+  padding: default;
+  margin-left: default;
+  font-size: 1.4em;
+}
+
+.presentations .btn-blue:hover,
+.presentations .btn-blue:active,
+.presentations .btn-blue:focus {
+  background-color: #007ce6 !important;
+}
+
+.presentations .btn-flat {
+  text-transform: none;
+  font-size: 1.4em;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.presentations .btn-flat:hover {
+  background-color: rgba(0, 138, 255, 0.2);
+}
+
+.presentations p {
+  color: #718096;
+  font-size: 1.1em;
+}
+
+.utilities h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #152c5b !important;
+  font-weight: 600;
+}
+
+.utilities .header p {
+  color: #718096;
+  text-align: center;
+}
+
+.utilities .badge {
+  color: #5cc9a7;
+  background-color: #def4ed;
+  padding: 1.3em 1.375em;
+  border-radius: 50rem;
+  line-height: 0;
+  font-weight: 600;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+}
+
+.utilities .card {
+  padding: 30px 0;
+  border-radius: 15px;
+}
+
+.utilities .card h5 {
+  color: #152c5b !important;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.utilities .card p {
+  color: #718096;
+  font-size: 1.1em;
+}
+
+.card {
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.card h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #152c5b !important;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #171347;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #c5c5c5;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+  clear: both;
+  padding-top: 10px;
+  color: white;
+}
+
+footer ul {
+  margin: 0;
+}
+
+footer .brand-logo {
+  font-weight: bold;
+  color: white !important;
+  font-size: 1.8em;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .brand-logo span {
+  color: #008aff;
+  font-family: "Mali", cursive;
+}
+
+footer .divider {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+@media (max-width: 600px) {
+  .valign-wrapper {
+    display: inherit;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-nav ul li a {
+    font-size: 1em;
+  }
+
+  .presentations h1 {
+    font-size: 2em;
+  }
+
+  .presentations .btn-blue {
+    font-size: 1.2em;
+  }
+
+  .presentations .btn-large {
+    height: 40px;
+    line-height: 35px;
+  }
+
+  .presentations .btn-flat {
+    font-size: 1.2em;
+  }
+}
+

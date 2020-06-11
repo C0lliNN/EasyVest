@@ -2,11 +2,16 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: "Nunito", sans-serif;
-$font-family-logo1: "Mali", cursive;
-$font-family-logo2: "Open Sans", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+
+$logo-font: 'Mali', cursive;
+$body-font: 'Open Sans', sans-serif;
+$font-size1: 3em;
+$font-size2: 1.8em;
+$font-size3: 1.4em;
+$font-size4: 1.1em;
+
+$font-weight1: 500;
+$font-weight2: 600;
 
 // Colors
 $blue: #008aff;
@@ -21,5 +26,11 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
-$gray: rgba(31, 45, 61, 0.6);
+$transparent-gray: rgba(31, 45, 61, 0.6);
+$very-light-gray: #bbb;
 $light-gray: #718096;
+$gray: #676767;
+$dark-gray: #404040;
+$white1: white;
+$white2: #f9f9f9;
+$white3: #f2f2f2;

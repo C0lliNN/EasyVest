@@ -1,0 +1,56 @@
+@use '../../../../sass/mixins';
+@use '../../../../sass/variables';
+
+.FullQuestionContainer {
+  @include mixins.block;
+
+  .WithMargin {
+    margin: 15px 0px;
+  }
+
+  .BtnGreen {
+    @include mixins.green-button;
+  }
+
+  .BtnOrange {
+    @include mixins.orange-button;
+    margin-left: 5px;
+  }
+
+  .InfoBar {
+    border-top: 1px solid variables.$very-light-gray;
+    margin-top: 35px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    h4 {
+      font-size: 1.2em;
+      color: variables.$gray;
+    }
+    .Category,
+    .Tags {
+      color: variables.$dark-gray;
+      font-size: 1.1em;
+    }
+
+    .Category {
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
+    .FlexBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .IconButton {
+      @include mixins.icon-button;
+      width: 60px;
+      height: 60px;
+    }
+    i {
+      font-size: 2.5em;
+    }
+  }
+}

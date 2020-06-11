@@ -3,44 +3,42 @@
 use App\Subject;
 use Illuminate\Database\Seeder;
 
-class SubjectsTableSeeder extends Seeder
-{
+class SubjectsTableSeeder extends Seeder {
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
-    {
+    public function run() {
         Subject::create([
-            'name' => 'Português',
+            'name' => 'Português'
         ]);
         Subject::create([
-            'name' => 'Literatura',
+            'name' => 'Literatura'
         ]);
         Subject::create([
-            'name' => 'Inglês',
+            'name' => 'Inglês'
         ]);
         Subject::create([
-            'name' => 'História',
+            'name' => 'História'
         ]);
         Subject::create([
-            'name' => 'Geografia',
+            'name' => 'Geografia'
         ]);
         Subject::create([
-            'name' => 'Sociologia',
+            'name' => 'Sociologia'
         ]);
         Subject::create([
-            'name' => 'Filosofia',
+            'name' => 'Filosofia'
         ]);
         Subject::create([
-            'name' => 'Matemática',
+            'name' => 'Matemática'
         ]);
         Subject::create([
-            'name' => 'Química',
+            'name' => 'Química'
         ]);
         Subject::create([
-            'name' => 'Física',
+            'name' => 'Física'
         ]);
         Subject::create([
             'name' => 'Biologia'

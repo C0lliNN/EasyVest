@@ -1,0 +1,157 @@
+@use 'base';
+@use 'header';
+@use 'variables';
+@use 'materialize_overrides';
+@use 'mixins';
+
+.presentations {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  h1 {
+    color: variables.$indigo;
+    font-size: variables.$font-size1;
+    font-weight: bold;
+    strong {
+      color: variables.$blue;
+    }
+  }
+
+  .btn-blue {
+    @include mixins.blue-button(default, default, default);
+    font-size: variables.$font-size3;
+  }
+
+  .btn-flat {
+    text-transform: none;
+    font-size: variables.$font-size3;
+    border-radius: 5px;
+    font-weight: 600;
+    &:hover {
+      background-color: transparentize(variables.$blue, 0.8);
+    }
+  }
+
+  p {
+    color: variables.$light-gray;
+    font-size: variables.$font-size4;
+  }
+}
+
+.utilities {
+  h2 {
+    font-size: variables.$font-size2;
+    text-align: center;
+    color: variables.$indigo;
+    font-weight: variables.$font-weight2;
+  }
+
+  .header p {
+    color: variables.$light-gray;
+    text-align: center;
+  }
+
+  .badge {
+    color: #5cc9a7;
+    background-color: #def4ed;
+    padding: 1.3em 1.375em;
+    border-radius: 50rem;
+    line-height: 0;
+    font-weight: variables.$font-weight2;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+  }
+  .card {
+    padding: 30px 0;
+    border-radius: 15px;
+    h5 {
+      color: variables.$indigo;
+      font-weight: 700;
+      font-size: variables.$font-size3;
+    }
+    p {
+      color: variables.$light-gray;
+      font-size: variables.$font-size4;
+    }
+  }
+}
+
+.card {
+  @include mixins.card;
+  h2 {
+    font-size: variables.$font-size2;
+    font-weight: variables.$font-weight2;
+    color: variables.$indigo;
+    text-align: center;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(23, 19, 71);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: rgb(197, 197, 197);
+  text-align: center;
+  p {
+    margin-bottom: 0;
+    clear: both;
+    padding-top: 10px;
+    color: white;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  .brand-logo {
+    font-weight: bold;
+    color: white !important;
+    font-size: variables.$font-size2;
+    font-family: variables.$body-font;
+    span {
+      color: variables.$blue;
+      font-family: variables.$logo-font;
+    }
+  }
+
+  .divider {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .valign-wrapper {
+    display: inherit;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    ul {
+      li a {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .presentations {
+    h1 {
+      font-size: 2em;
+    }
+
+    .btn-blue {
+      font-size: 1.2em;
+    }
+
+    .btn-large {
+      height: 40px;
+      line-height: 35px;
+    }
+
+    .btn-flat {
+      font-size: 1.2em;
+    }
+  }
+}
