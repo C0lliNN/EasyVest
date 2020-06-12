@@ -25,22 +25,7 @@
     }
   }
 
-  .input-field .material-icons {
-    color: variables.$transparent-gray;
-  }
-
-  .input-field input:focus + label {
-    color: variables.$blue !important;
-  }
-
-  .input-field .prefix.active {
-    color: variables.$blue !important;
-  }
-
-  .row .input-field input:focus {
-    border-bottom: 1px solid variables.$blue !important;
-    box-shadow: 0 1px 0 0 variables.$blue !important;
-  }
+  @include mixins.blue-input;
 
   .blue-box[type='checkbox'].filled-in:checked + span:not(.lever):after {
     border: 2px solid variables.$blue;

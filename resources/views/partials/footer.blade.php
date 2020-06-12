@@ -9,7 +9,7 @@
                 </a>
                 <ul class="right">
                     <li>
-                        <a href="https://github.com/C0lliNN" target="_blank">
+                        <a href="https://github.com/C0lliNN" target="_blank" rel="noreferrer">
                             <i class="material-icons">code</i>
                         </a>
                     </li>
@@ -19,7 +19,8 @@
 
             <p>
                 <div class="divider"></div><br>
-                © 2020 <a href="https://raphaelcollin.com/" target="_blank">Raphael Collin.</a> Todos os Direitos
+                © 2020 <a href="https://raphaelcollin.com/" target="_blank" rel="noreferrer">Raphael Collin.</a> Todos
+                os Direitos
                 Reservados
             </p>
 

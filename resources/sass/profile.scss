@@ -1,0 +1,74 @@
+@use 'header';
+@use 'variables';
+@use 'mixins';
+
+#profile {
+  @include mixins.block;
+  h2 {
+    font-size: variables.$font-size1;
+    font-weight: variables.$font-weight2;
+    text-align: center;
+    color: variables.$indigo;
+  }
+
+  .img-container {
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 100%;
+      margin-bottom: 10px;
+    }
+    i {
+      font-size: 10em;
+      color: variables.$gray;
+    }
+  }
+
+  @include mixins.blue-input;
+
+  label {
+    font-size: variables.$font-size4;
+  }
+
+  .btn-blue {
+    @include mixins.blue-button(default, default, default);
+  }
+
+  .btn-green {
+    @include mixins.green-button;
+    font-size: variables.$font-size3;
+    font-weight: 400;
+    padding: 5px 50px;
+    line-height: variables.$font-size3;
+  }
+
+  #file-input {
+    display: none;
+  }
+
+  .name {
+    font-size: variables.$font-size2;
+    font-weight: variables.$font-weight2;
+    color: variables.$indigo;
+    text-align: left;
+  }
+
+  .description {
+    text-align: left;
+    font-size: variables.$font-size4;
+  }
+}
+.alert-danger {
+  border: 1px solid transparentize($color: variables.$red, $amount: 0.7);
+  border-radius: 5px;
+  background-color: lighten($color: variables.$red, $amount: 35);
+  padding: 10px;
+  color: variables.$red;
+}
+.alert-success {
+  border: 1px solid transparentize($color: variables.$green, $amount: 0.7);
+  border-radius: 5px;
+  background-color: lighten($color: variables.$green, $amount: 35);
+  padding: 10px;
+  color: darken(variables.$green, 20);
+}

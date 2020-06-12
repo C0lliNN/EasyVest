@@ -5,6 +5,8 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class User extends Authenticatable {
     use Notifiable;
@@ -51,5 +53,11 @@ class User extends Authenticatable {
             'relation',
             'answer'
         );
+    }
+
+    public function deleteProfilePicture() {
+        if ($this->image) {
+            Storage::delete(Str::substr($this->image, 8));
+        }
     }
 }

@@ -35,7 +35,7 @@ EasyVest – Listas e Questões
                             <span class="btn-inner--text">Cadastrar</span>
                             <span class="btn-inner--icon"><i data-feather="chevron-right"></i></span>
                         </a>
-                        <a href="{{ route('login') }}" class="btn-flat btn-large" target="_blank">Login</a>
+                        <a href="{{ route('login') }}" class="btn-flat btn-large">Login</a>
                     </div>
                 </div>
             </div>

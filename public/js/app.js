@@ -2090,9 +2090,9 @@ module.exports = {
 /***/ }),
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/App.scss":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--9-1!./node_modules/postcss-loader/src??ref--9-2!./node_modules/sass-loader/dist/cjs.js??ref--9-3!./resources/js/components/App.scss ***!
-  \***************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/App.scss ***!
+  \******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2111,9 +2111,9 @@ exports.locals = {
 /***/ }),
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/Spinner/Spinner.scss":
-/*!******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--9-1!./node_modules/postcss-loader/src??ref--9-2!./node_modules/sass-loader/dist/cjs.js??ref--9-3!./resources/js/components/UI/Spinner/Spinner.scss ***!
-  \******************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/UI/Spinner/Spinner.scss ***!
+  \*********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35522,7 +35522,7 @@ var App = function App() {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--9-1!../../../node_modules/postcss-loader/src??ref--9-2!../../../node_modules/sass-loader/dist/cjs.js??ref--9-3!./App.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/App.scss");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--10-1!../../../node_modules/postcss-loader/src??ref--10-2!../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./App.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/App.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -35599,7 +35599,7 @@ var Spinner = function Spinner() {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--9-1!../../../../../node_modules/postcss-loader/src??ref--9-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--9-3!./Spinner.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/Spinner/Spinner.scss");
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--10-1!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./Spinner.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/Spinner/Spinner.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -35654,17 +35654,29 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/sass/profile.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/profile.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!**********************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/home.scss ./resources/sass/header.scss ./resources/sass/form.scss ***!
-  \**********************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/home.scss ./resources/sass/header.scss ./resources/sass/form.scss ./resources/sass/profile.scss ***!
+  \****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\home.scss */"./resources/sass/home.scss");
 __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\header.scss */"./resources/sass/header.scss");
-module.exports = __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\form.scss */"./resources/sass/form.scss");
+__webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\form.scss */"./resources/sass/form.scss");
+module.exports = __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\profile.scss */"./resources/sass/profile.scss");
 
 
 /***/ })

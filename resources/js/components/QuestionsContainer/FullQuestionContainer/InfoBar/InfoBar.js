@@ -8,7 +8,10 @@ const InfoBar = (props) => {
     <div className={styles.InfoBar}>
       <h4>
         <Avatar color="green" name={props.ownerName} size="40" round />
-        &nbsp;&nbsp;por {props.ownerName}
+        &nbsp;&nbsp;por{' '}
+        <a href={`/profile/${props.ownerId}`} target="_blank" rel="noreferrer">
+          {props.ownerName}
+        </a>{' '}
       </h4>
       <div className={styles.Category}>
         <strong>Categoria: </strong>
@@ -78,14 +81,15 @@ const InfoBar = (props) => {
 };
 
 InfoBar.propTypes = {
-  deleteQuestionHandler: PropTypes.func,
-  editQuestionHandler: PropTypes.func,
-  isAnswered: PropTypes.bool,
-  isBookmarked: PropTypes.bool,
-  isOwner: PropTypes.bool,
-  ownerName: PropTypes.string,
-  subject: PropTypes.string,
-  tags: PropTypes.string,
+  deleteQuestionHandler: PropTypes.any,
+  editQuestionHandler: PropTypes.any,
+  isAnswered: PropTypes.any,
+  isBookmarked: PropTypes.any,
+  isOwner: PropTypes.any,
+  ownerId: PropTypes.any,
+  ownerName: PropTypes.any,
+  subject: PropTypes.any,
+  tags: PropTypes.any,
   toggleBookmarkHandler: PropTypes.func,
 };
 

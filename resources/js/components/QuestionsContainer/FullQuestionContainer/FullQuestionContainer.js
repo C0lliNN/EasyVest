@@ -174,6 +174,7 @@ const FullQuestionContainer = (props) => {
     const validOwner = state.question.owner && state.question.owner.length;
 
     const ownerName = validOwner ? state.question.owner[0].name : '';
+    const ownerId = validOwner ? state.question.owner[0].id : null;
     const subject = state.question.subject ? state.question.subject.name : '';
 
     content = (
@@ -205,6 +206,7 @@ const FullQuestionContainer = (props) => {
         </div>
         <InfoBar
           ownerName={ownerName}
+          ownerId={ownerId}
           subject={subject}
           tags={state.question.tags}
           isOwner={isOwner}

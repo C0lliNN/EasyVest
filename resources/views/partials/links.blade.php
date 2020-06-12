@@ -10,7 +10,7 @@
     </a>
 </li>
 <li>
-    <a href="#">
+    <a href="{{ route('my-profile') }}">
         Perfil
     </a>
 </li>

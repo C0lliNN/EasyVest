@@ -19,10 +19,16 @@ Route::view('/', 'home')
     ->name('home')
     ->middleware(['guest']);
 
-Route::get('/dashboard', 'DashboardController')
-    ->name('dashboard')
-    ->middleware(['auth']);
-
-Route::view('questions/{path?}', 'questions')->name('questions');
-Route::view('questions/{path?}/{path2?}', 'questions')->name('questions');
-Route::view('lists/{path?}', 'lists')->name('lists');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', 'DashboardController')->name('dashboard');
+    Route::get('my-profile', 'UsersController@myProfile')->name('my-profile');
+    Route::put('my-profile', 'UsersController@update')->name(
+        'my-profile.update'
+    );
+    Route::get('/profile/{user}', 'UsersController@showProfile')->name(
+        'profile.show'
+    );
+    Route::view('questions/{path?}', 'questions')->name('questions');
+    Route::view('questions/{path?}/{path2?}', 'questions')->name('questions');
+    Route::view('lists/{path?}', 'lists')->name('lists');
+});

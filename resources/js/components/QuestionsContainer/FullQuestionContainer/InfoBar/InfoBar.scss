@@ -9,6 +9,12 @@
   h4 {
     font-size: variables.$font-size4;
     color: variables.$gray;
+    a {
+      color: variables.$gray;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   .Category,
   .Tags {

@@ -132,72 +132,119 @@ h6 {
   min-height: 80px !important;
 }
 
-.form {
-  border-radius: 20px;
-  padding-top: 5px;
-  padding-bottom: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
+#profile {
+  background-color: #f9f9f9;
+  padding: 0px 20px;
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.form h2 {
-  font-size: 2.5em;
+#profile h2 {
+  font-size: 3em;
   font-weight: 600;
-  color: #152c5b !important;
   text-align: center;
+  color: #152c5b !important;
 }
 
-.form .btn-blue {
-  background-color: #008aff;
-  border-radius: 5px;
-  text-transform: none;
-  color: #f8fafc !important;
+#profile .img-container img {
   display: block;
-  padding: default;
-  margin-left: default !important;
   width: 100%;
-  font-size: 1.4em;
+  border-radius: 100%;
+  margin-bottom: 10px;
 }
 
-.form .btn-blue:hover,
-.form .btn-blue:active,
-.form .btn-blue:focus {
-  background-color: #007ce6 !important;
+#profile .img-container i {
+  font-size: 10em;
+  color: #676767;
 }
 
-.form label {
-  font-size: 1.1em;
+#profile .input-field .material-icons {
   color: rgba(31, 45, 61, 0.6);
 }
 
-.form label span {
-  color: rgba(31, 45, 61, 0.6);
-  font-size: 1.1em !important;
-}
-
-.form .input-field .material-icons {
-  color: rgba(31, 45, 61, 0.6);
-}
-
-.form .input-field input:focus + label,
-.form .input-field textarea:focus + label {
+#profile .input-field input:focus + label,
+#profile .input-field textarea:focus + label {
   color: #008aff !important;
 }
 
-.form .input-field .prefix.active {
+#profile .input-field .prefix.active {
   color: #008aff !important;
 }
 
-.form .input-field input:focus,
-.form .input-field input:active,
-.form .input-field textarea:focus,
-.form .input-field textarea:active {
+#profile .input-field input:focus,
+#profile .input-field input:active,
+#profile .input-field textarea:focus,
+#profile .input-field textarea:active {
   border-bottom: 1px solid #008aff !important;
   box-shadow: 0 1px 0 0 #008aff !important;
 }
 
-.form .blue-box[type=checkbox].filled-in:checked + span:not(.lever):after {
-  border: 2px solid #008aff;
+#profile label {
+  font-size: 1.1em;
+}
+
+#profile .btn-blue {
   background-color: #008aff;
+  border-radius: 5px;
+  text-transform: none;
+  color: #f8fafc !important;
+  display: default;
+  padding: default;
+  margin-left: default !important;
+}
+
+#profile .btn-blue:hover,
+#profile .btn-blue:active,
+#profile .btn-blue:focus {
+  background-color: #007ce6 !important;
+}
+
+#profile .btn-green {
+  background-color: #38c172 !important;
+  text-transform: none;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.4em;
+  font-weight: 400;
+  padding: 5px 50px;
+  line-height: 1.4em;
+}
+
+#profile .btn-green:hover,
+#profile .btn-green:active,
+#profile .btn-green:focus {
+  background-color: #35b56b !important;
+}
+
+#profile #file-input {
+  display: none;
+}
+
+#profile .name {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #152c5b !important;
+  text-align: left;
+}
+
+#profile .description {
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.alert-danger {
+  border: 1px solid rgba(227, 52, 47, 0.3);
+  border-radius: 5px;
+  background-color: #f8cecc;
+  padding: 10px;
+  color: #e3342f;
+}
+
+.alert-success {
+  border: 1px solid rgba(56, 193, 114, 0.3);
+  border-radius: 5px;
+  background-color: #bfecd2;
+  padding: 10px;
+  color: #217243;
 }
 

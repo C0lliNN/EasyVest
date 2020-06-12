@@ -5,11 +5,9 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateQuestionRequest;
 use App\Http\Resources\Question as ResourcesQuestion;
-use App\Http\Resources\QuestionsCollection;
 use App\Question;
-use Illuminate\Http\Request;
+use App\User;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class QuestionsController extends Controller {
     /**
@@ -29,7 +27,8 @@ class QuestionsController extends Controller {
                 ->where('content', 'LIKE', "%{$query}%")
                 ->orWhere('tags', 'LIKE', "%{$query}%");
         } else {
-            $queryBuilder = Auth::user()
+            $user = User::findOrFail(Auth::id());
+            $queryBuilder = $user
                 ->myQuestions()
                 ->with('relations')
                 ->with('subject');
@@ -107,9 +106,8 @@ class QuestionsController extends Controller {
      */
     public function destroy(Question $question) {
         if ($question->owner()->firstOrFail()->id === Auth::id()) {
-            Auth::user()
-                ->myQuestions()
-                ->detach($question->id);
+            $user = User::findOrFail(Auth::id());
+            $user->myQuestions()->detach($question->id);
             $question->delete();
             return response('success', 200);
         }
@@ -118,7 +116,8 @@ class QuestionsController extends Controller {
     }
 
     public function getBookmarks() {
-        return Auth::user()
+        $user = User::findOrFail(Auth::id());
+        return $user
             ->bookmarks()
             ->with('relations')
             ->with('subject')
@@ -132,15 +131,15 @@ class QuestionsController extends Controller {
     }
 
     public function unbookmarkQuestion(Question $question) {
-        Auth::user()
-            ->bookmarks()
-            ->detach($question->id);
+        $user = User::findOrFail(Auth::id());
+        $user->bookmarks()->detach($question->id);
         return response('success', 200);
     }
 
     public function createAnswer(Question $question) {
+        $user = User::findOrFail(Auth::id());
         if (
-            Auth::user()
+            $user
                 ->answers()
                 ->wherePivot('question_id', $question->id)
                 ->count() == 0
@@ -153,7 +152,8 @@ class QuestionsController extends Controller {
     }
 
     public function answers() {
-        return Auth::user()
+        $user = User::findOrFail(Auth::id());
+        return $user
             ->answers()
             ->with('relations')
             ->with('subject')

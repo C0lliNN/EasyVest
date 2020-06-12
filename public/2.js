@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestion/FullQuestion.scss":
-/*!******************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--9-1!./node_modules/postcss-loader/src??ref--9-2!./node_modules/sass-loader/dist/cjs.js??ref--9-3!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestion/FullQuestion.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestion/FullQuestion.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26,9 +26,9 @@ exports.locals = {
 /***/ }),
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestionContainer.scss":
-/*!**************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--9-1!./node_modules/postcss-loader/src??ref--9-2!./node_modules/sass-loader/dist/cjs.js??ref--9-3!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestionContainer.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestionContainer.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -50,9 +50,9 @@ exports.locals = {
 /***/ }),
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss":
-/*!********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--9-1!./node_modules/postcss-loader/src??ref--9-2!./node_modules/sass-loader/dist/cjs.js??ref--9-3!./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss ***!
-  \********************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -61,7 +61,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".InfoBar__InfoBar___Aezlk {\n  border-top: 1px solid #bbb;\n  margin-top: 35px;\n  padding-top: 5px;\n  padding-bottom: 20px;\n}\n.InfoBar__InfoBar___Aezlk h4 {\n  font-size: 1.1em;\n  color: #676767;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7,\n.InfoBar__InfoBar___Aezlk .InfoBar__Tags___3VRRf {\n  color: #404040;\n  font-size: 1.1em;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7 {\n  margin-bottom: 8px;\n}\n.InfoBar__InfoBar___Aezlk p {\n  font-size: 1.4em;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__FlexBox___1QCI1 {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU {\n  border: none;\n  background-color: transparent;\n  border-radius: 100%;\n  cursor: pointer;\n  width: 60px;\n  height: 60px;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.InfoBar__InfoBar___Aezlk i {\n  font-size: 2.5em;\n}\n\n@media (max-width: 700px) {\n  .InfoBar__InfoBar___Aezlk h4 {\n    font-size: 1.1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7,\n.InfoBar__InfoBar___Aezlk .InfoBar__Tags___3VRRf {\n    font-size: 1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7 {\n    margin-bottom: 8px;\n  }\n  .InfoBar__InfoBar___Aezlk p {\n    font-size: 1.1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__FlexBox___1QCI1 {\n    flex-wrap: wrap;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU {\n    border: none;\n    background-color: transparent;\n    border-radius: 100%;\n    cursor: pointer;\n    width: 45px;\n    height: 45px;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU:hover {\n    background-color: rgba(0, 0, 0, 0.05);\n  }\n  .InfoBar__InfoBar___Aezlk i {\n    font-size: 2em;\n  }\n}", ""]);
+exports.push([module.i, ".InfoBar__InfoBar___Aezlk {\n  border-top: 1px solid #bbb;\n  margin-top: 35px;\n  padding-top: 5px;\n  padding-bottom: 20px;\n}\n.InfoBar__InfoBar___Aezlk h4 {\n  font-size: 1.1em;\n  color: #676767;\n}\n.InfoBar__InfoBar___Aezlk h4 a {\n  color: #676767;\n}\n.InfoBar__InfoBar___Aezlk h4 a:hover {\n  text-decoration: underline;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7,\n.InfoBar__InfoBar___Aezlk .InfoBar__Tags___3VRRf {\n  color: #404040;\n  font-size: 1.1em;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7 {\n  margin-bottom: 8px;\n}\n.InfoBar__InfoBar___Aezlk p {\n  font-size: 1.4em;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__FlexBox___1QCI1 {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU {\n  border: none;\n  background-color: transparent;\n  border-radius: 100%;\n  cursor: pointer;\n  width: 60px;\n  height: 60px;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.InfoBar__InfoBar___Aezlk i {\n  font-size: 2.5em;\n}\n\n@media (max-width: 700px) {\n  .InfoBar__InfoBar___Aezlk h4 {\n    font-size: 1.1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7,\n.InfoBar__InfoBar___Aezlk .InfoBar__Tags___3VRRf {\n    font-size: 1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7 {\n    margin-bottom: 8px;\n  }\n  .InfoBar__InfoBar___Aezlk p {\n    font-size: 1.1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__FlexBox___1QCI1 {\n    flex-wrap: wrap;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU {\n    border: none;\n    background-color: transparent;\n    border-radius: 100%;\n    cursor: pointer;\n    width: 45px;\n    height: 45px;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU:hover {\n    background-color: rgba(0, 0, 0, 0.05);\n  }\n  .InfoBar__InfoBar___Aezlk i {\n    font-size: 2em;\n  }\n}", ""]);
 
 // exports
 exports.locals = {
@@ -224,7 +224,7 @@ FullQuestion.propTypes = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader??ref--9-1!../../../../../../node_modules/postcss-loader/src??ref--9-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--9-3!./FullQuestion.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestion/FullQuestion.scss");
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader??ref--10-1!../../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./FullQuestion.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestion/FullQuestion.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -482,6 +482,7 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
   } else {
     var validOwner = state.question.owner && state.question.owner.length;
     var ownerName = validOwner ? state.question.owner[0].name : '';
+    var ownerId = validOwner ? state.question.owner[0].id : null;
     var subject = state.question.subject ? state.question.subject.name : '';
     content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_FullQuestion_FullQuestion__WEBPACK_IMPORTED_MODULE_5__["default"], {
       question: state.question,
@@ -503,6 +504,7 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
       className: "material-icons left"
     }, "refresh"), "Restaurar")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_InfoBar_InfoBar__WEBPACK_IMPORTED_MODULE_9__["default"], {
       ownerName: ownerName,
+      ownerId: ownerId,
       subject: subject,
       tags: state.question.tags,
       isOwner: isOwner,
@@ -540,7 +542,7 @@ FullQuestionContainer.propTypes = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--9-1!../../../../../node_modules/postcss-loader/src??ref--9-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--9-3!./FullQuestionContainer.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestionContainer.scss");
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--10-1!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./FullQuestionContainer.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestionContainer.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -591,7 +593,11 @@ var InfoBar = function InfoBar(props) {
     name: props.ownerName,
     size: "40",
     round: true
-  }), "\xA0\xA0por ", props.ownerName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }), "\xA0\xA0por", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+    href: "/profile/".concat(props.ownerId),
+    target: "_blank",
+    rel: "noreferrer"
+  }, props.ownerName), ' '), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: _InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.Category
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("strong", null, "Categoria: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, props.subject)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: _InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.Tags
@@ -641,14 +647,15 @@ var InfoBar = function InfoBar(props) {
 };
 
 InfoBar.propTypes = {
-  deleteQuestionHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
-  editQuestionHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
-  isAnswered: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
-  isBookmarked: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
-  isOwner: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
-  ownerName: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
-  subject: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
-  tags: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+  deleteQuestionHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  editQuestionHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  isAnswered: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  isBookmarked: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  isOwner: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  ownerId: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  ownerName: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  subject: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  tags: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
   toggleBookmarkHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func
 };
 /* harmony default export */ __webpack_exports__["default"] = (InfoBar);
@@ -663,7 +670,7 @@ InfoBar.propTypes = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader??ref--9-1!../../../../../../node_modules/postcss-loader/src??ref--9-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--9-3!./InfoBar.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss");
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader??ref--10-1!../../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./InfoBar.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
