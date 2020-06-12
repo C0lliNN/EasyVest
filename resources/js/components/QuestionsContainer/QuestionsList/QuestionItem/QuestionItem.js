@@ -41,6 +41,15 @@ const QuestionItem = (props) => {
         </p>
 
         <p className="crud-icons">
+          {relations.includes('answer') && (
+            <button
+              className="tooltipped"
+              data-position="bottom"
+              data-tooltip="Questão Respondida"
+            >
+              <i className="material-icons green-text">check</i>
+            </button>
+          )}
           {relations.includes('owner') && (
             <React.Fragment>
               <button

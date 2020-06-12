@@ -7,7 +7,7 @@
   color: variables.$body-bg !important;
   display: $display;
   padding: $padding;
-  margin-left: $margin-left;
+  margin-left: $margin-left !important;
   &:hover,
   &:active,
   &:focus {

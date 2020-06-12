@@ -86,6 +86,12 @@ const FullQuestion = (props) => {
     );
   });
 
+  if (props.correct) {
+    props.registerAnswerHandler(
+      props.selectedAlternative === question.correctAlternative
+    );
+  }
+
   return (
     <article className={styles.FullQuestion}>
       <div
@@ -108,6 +114,7 @@ FullQuestion.propTypes = {
     content: PropTypes.any,
     correctAlternative: PropTypes.any,
   }),
+  registerAnswerHandler: PropTypes.func,
   selectedAlternative: PropTypes.any,
   setSelectedAlternative: PropTypes.func,
 };

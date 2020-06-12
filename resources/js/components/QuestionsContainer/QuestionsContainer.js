@@ -78,7 +78,7 @@ const QuestionsContainer = (props) => {
             </NavLink>
 
             <NavLink
-              to="/questions/answered"
+              to="/questions/answers"
               className={`collection-item ${styles.Option}`}
               activeClassName={styles.Active}
               exact

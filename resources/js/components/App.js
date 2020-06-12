@@ -41,7 +41,7 @@ const App = () => {
               )}
             />
             <Route
-              path="/questions/answered"
+              path="/questions/answers"
               exact
               render={() => (
                 <Suspense fallback={<Spinner />}>

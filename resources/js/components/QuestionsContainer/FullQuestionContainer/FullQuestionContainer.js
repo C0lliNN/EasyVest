@@ -4,10 +4,10 @@ import styles from './FullQuestionContainer.scss';
 import Spinner from '../../UI/Spinner/Spinner';
 import ErrorMessage from '../../UI/ErrorMessage/ErrorMessage';
 import FullQuestion from './FullQuestion/FullQuestion';
-import Avatar from 'react-avatar';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 import { setupTooltips } from '../../utility';
+import InfoBar from './InfoBar/InfoBar';
 
 const initialState = {
   question: {},
@@ -53,7 +53,7 @@ const FullQuestionContainer = (props) => {
   const [selectedAlternative, setSelectedAlternative] = useState();
 
   const [isBookmarked, setIsBookmarked] = useState();
-
+  const [isAnswered, setIsAnswered] = useState();
   const [isOwner, setIsOwner] = useState();
 
   const questionId = props.match.params.question;
@@ -70,6 +70,7 @@ const FullQuestionContainer = (props) => {
 
         setIsBookmarked(relations.includes('bookmark'));
         setIsOwner(relations.includes('owner'));
+        setIsAnswered(relations.includes('answer'));
 
         dispatch({
           type: REQUEST_SUCCESS,
@@ -150,6 +151,19 @@ const FullQuestionContainer = (props) => {
       });
   };
 
+  const registerAnswerHandler = (correctAnswered) => {
+    if (!isAnswered) {
+      console.log(correctAnswered);
+      axios.post(`/questions/${questionId}/answer`).then((response) => {
+        if (response.status === 200) {
+          //eslint-disable-next-line
+          M.toast({ html: 'Questão Respondida' });
+          setIsAnswered(true);
+        }
+      });
+    }
+  };
+
   let content = null;
 
   if (state.isLoading) {
@@ -159,6 +173,9 @@ const FullQuestionContainer = (props) => {
   } else {
     const validOwner = state.question.owner && state.question.owner.length;
 
+    const ownerName = validOwner ? state.question.owner[0].name : '';
+    const subject = state.question.subject ? state.question.subject.name : '';
+
     content = (
       <div>
         <FullQuestion
@@ -166,6 +183,7 @@ const FullQuestionContainer = (props) => {
           correct={isVerifying}
           selectedAlternative={selectedAlternative}
           setSelectedAlternative={setSelectedAlternative}
+          registerAnswerHandler={registerAnswerHandler}
         />
         <div className={styles.WithMargin}>
           <button
@@ -185,74 +203,17 @@ const FullQuestionContainer = (props) => {
             </button>
           )}
         </div>
-
-        <div className={styles.InfoBar}>
-          <h4>
-            <Avatar
-              color="green"
-              name={validOwner ? state.question.owner[0].name : ''}
-              size="40"
-              round
-            />
-            &nbsp;&nbsp;por {validOwner ? state.question.owner[0].name : ''}
-          </h4>
-          <div className={styles.Category}>
-            <strong>Categoria: </strong>
-            <span>
-              {state.question.subject ? state.question.subject.name : ''}
-            </span>
-          </div>
-          <div className={styles.Tags}>
-            <strong>Tags: </strong>
-            <span>{state.question.tags}</span>
-          </div>
-          <div className={styles.FlexBox}>
-            <p>
-              <span className="green-text">65%</span> acertaram essa questão
-            </p>
-            <div>
-              {isBookmarked ? (
-                <button
-                  className={`${styles.IconButton} yellow-text text-darken-2 tooltipped`}
-                  onClick={() => toggleBookmarkHandler(false)}
-                  data-position="bottom"
-                  data-tooltip="Remover dos Favoritos"
-                >
-                  <i className="material-icons">star</i>
-                </button>
-              ) : (
-                <button
-                  className={`${styles.IconButton} yellow-text text-darken-2 tooltipped`}
-                  onClick={() => toggleBookmarkHandler(true)}
-                  data-position="bottom"
-                  data-tooltip="Adicionar aos Favoritos"
-                >
-                  <i className="material-icons">stars</i>
-                </button>
-              )}
-              {isOwner && (
-                <React.Fragment>
-                  <button
-                    className={`${styles.IconButton} blue-text tooltipped`}
-                    onClick={editQuestionHandler}
-                    data-position="bottom"
-                    data-tooltip="Editar"
-                  >
-                    <i className="material-icons">edit</i>
-                  </button>
-                  <button
-                    className={`${styles.IconButton} red-text tooltipped`}
-                    onClick={deleteQuestionHandler}
-                    data-position="bottom"
-                    data-tooltip="Excluir"
-                  >
-                    <i className="material-icons">delete</i>
-                  </button>
-                </React.Fragment>
-              )}
-            </div>
-          </div>
-        </div>
+        <InfoBar
+          ownerName={ownerName}
+          subject={subject}
+          tags={state.question.tags}
+          isOwner={isOwner}
+          isBookmarked={isBookmarked}
+          isAnswered={isAnswered}
+          deleteQuestionHandler={deleteQuestionHandler}
+          toggleBookmarkHandler={toggleBookmarkHandler}
+          editQuestionHandler={editQuestionHandler}
+        />
       </div>
     );
   }

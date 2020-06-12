@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'mixins';
+@use 'base';
 
 .brand-logo {
   font-weight: bold;
@@ -49,6 +50,7 @@
 
   .btn-blue {
     @include mixins.blue-button(inline, 8px 20px, 30px);
+    font-size: variables.$font-size4;
   }
 
   .btn-red {

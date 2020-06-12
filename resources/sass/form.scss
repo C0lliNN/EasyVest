@@ -5,9 +5,9 @@
 .form {
   @include mixins.card;
   h2 {
-    font-size: variables.$font-size1;
+    font-size: 2.5em;
+    font-weight: variables.$font-weight2;
     color: variables.$indigo;
-    font-weight: variables.$font-weight1;
     text-align: center;
   }
   .btn-blue {

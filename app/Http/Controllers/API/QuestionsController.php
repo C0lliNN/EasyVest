@@ -17,6 +17,9 @@ class QuestionsController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
+
+    const RECORDS_PER_PAGE = 5;
+
     public function index() {
         $query = request()->query('query');
 
@@ -32,7 +35,7 @@ class QuestionsController extends Controller {
                 ->with('subject');
         }
 
-        return $queryBuilder->paginate(2);
+        return $queryBuilder->paginate(self::RECORDS_PER_PAGE);
     }
 
     /**
@@ -119,7 +122,7 @@ class QuestionsController extends Controller {
             ->bookmarks()
             ->with('relations')
             ->with('subject')
-            ->paginate(2);
+            ->paginate(self::RECORDS_PER_PAGE);
     }
 
     public function bookmarkQuestion(Question $question) {
@@ -133,5 +136,27 @@ class QuestionsController extends Controller {
             ->bookmarks()
             ->detach($question->id);
         return response('success', 200);
+    }
+
+    public function createAnswer(Question $question) {
+        if (
+            Auth::user()
+                ->answers()
+                ->wherePivot('question_id', $question->id)
+                ->count() == 0
+        ) {
+            $question->users()->attach(Auth::id(), ['relation' => 'answer']);
+            return response('success', 200);
+        }
+
+        return response('Question already Answered', 400);
+    }
+
+    public function answers() {
+        return Auth::user()
+            ->answers()
+            ->with('relations')
+            ->with('subject')
+            ->paginate(self::RECORDS_PER_PAGE);
     }
 }

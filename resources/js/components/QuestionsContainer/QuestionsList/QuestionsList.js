@@ -66,25 +66,9 @@ const QuestionsList = (props) => {
         if (response.status === 200) {
           console.log(response);
 
-          let questions = response.data.data;
-
-          if (!location.search) {
-            questions = questions.filter((question) => {
-              const relations = question.relations.map(
-                (user) => user.pivot.relation
-              );
-
-              if (location.pathname === '/questions') {
-                return relations.includes('owner');
-              }
-
-              return relations.includes('bookmark');
-            });
-          }
-
           dispatch({
             type: REQUEST_SUCCESS,
-            questions: questions,
+            questions: response.data.data,
           });
 
           setLastPage(response.data.last_page);

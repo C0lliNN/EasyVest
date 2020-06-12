@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".FullQuestion__FullQuestion___2HcRA .FullQuestion__Content___3Cnlo p {\n  font-size: 1.4em;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i p {\n  font-size: 1.5em;\n  padding: 10px;\n  color: #676767;\n  cursor: pointer;\n  margin: 0;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i p::before {\n  display: none;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i p::after {\n  display: none;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:not(checked) + div {\n  color: #676767;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:not(checked) + div:hover {\n  background: #f2f2f2;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:checked + div {\n  background-color: #008aff;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:checked + div p {\n  color: white;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:checked + div:hover {\n  background-color: #008aff;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0:hover,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0:active,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0:focus {\n  background-color: #e3342f;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x:hover,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x:active,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x:focus {\n  background-color: #38c172;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0 p,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x p {\n  color: white;\n}", ""]);
+exports.push([module.i, ".FullQuestion__FullQuestion___2HcRA .FullQuestion__Content___3Cnlo p {\n  font-size: 1.4em;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i p {\n  font-size: 1.5em;\n  padding: 10px;\n  color: #676767;\n  cursor: pointer;\n  margin: 0;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i p::before {\n  display: none;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i p::after {\n  display: none;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:not(checked) + div {\n  color: #676767;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:not(checked) + div:hover {\n  background: #f2f2f2;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:checked + div {\n  background-color: #008aff;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:checked + div p {\n  color: white;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i input:checked + div:hover {\n  background-color: #008aff;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0:hover,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0:active,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0:focus {\n  background-color: #e3342f;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x:hover,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x:active,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x:focus {\n  background-color: #38c172;\n}\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Red___O3qV0 p,\n.FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i .FullQuestion__Green___2bK8x p {\n  color: white;\n}\n\n@media (max-width: 700px) {\n  .FullQuestion__FullQuestion___2HcRA .FullQuestion__Content___3Cnlo p {\n    font-size: 1.2em;\n  }\n  .FullQuestion__FullQuestion___2HcRA .FullQuestion__Alternative___3Pk9i p {\n    font-size: 1.4em;\n  }\n}", ""]);
 
 // exports
 exports.locals = {
@@ -37,19 +37,39 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".FullQuestionContainer__FullQuestionContainer___3dn7O {\n  background-color: #f9f9f9;\n  padding: 0px 20px;\n  margin-top: 20px;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__WithMargin___2M4A9 {\n  margin: 15px 0px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnGreen___GFo9i {\n  background-color: #38c172 !important;\n  text-transform: none;\n  font-weight: 500;\n  border-radius: 5px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnGreen___GFo9i:hover, .FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnGreen___GFo9i:active, .FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnGreen___GFo9i:focus {\n  background-color: #35b56b !important;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnOrange___GQ1xn {\n  background-color: #f6993f !important;\n  text-transform: none;\n  font-weight: 500;\n  border-radius: 5px;\n  margin-left: 5px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnOrange___GQ1xn:hover, .FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnOrange___GQ1xn:active, .FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnOrange___GQ1xn:focus {\n  background-color: #f59130 !important;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv {\n  border-top: 1px solid #bbb;\n  margin-top: 35px;\n  padding-top: 5px;\n  padding-bottom: 20px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv h4 {\n  font-size: 1.2em;\n  color: #676767;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv .FullQuestionContainer__Category___1onYZ,\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv .FullQuestionContainer__Tags___jq6LW {\n  color: #404040;\n  font-size: 1.1em;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv .FullQuestionContainer__Category___1onYZ {\n  margin-bottom: 8px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv p {\n  font-size: 1.3em;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv .FullQuestionContainer__FlexBox___2vbu0 {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv .FullQuestionContainer__IconButton___1v4LW {\n  border: none;\n  background-color: transparent;\n  border-radius: 100%;\n  cursor: pointer;\n  width: 60px;\n  height: 60px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv .FullQuestionContainer__IconButton___1v4LW:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__InfoBar___qElLv i {\n  font-size: 2.5em;\n}", ""]);
+exports.push([module.i, ".FullQuestionContainer__FullQuestionContainer___3dn7O {\n  background-color: #f9f9f9;\n  padding: 0px 20px;\n  margin-top: 20px;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__WithMargin___2M4A9 {\n  margin: 15px 0px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnGreen___GFo9i {\n  background-color: #38c172 !important;\n  text-transform: none;\n  font-weight: 500;\n  border-radius: 5px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnGreen___GFo9i:hover, .FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnGreen___GFo9i:active, .FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnGreen___GFo9i:focus {\n  background-color: #35b56b !important;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnOrange___GQ1xn {\n  background-color: #f6993f !important;\n  text-transform: none;\n  font-weight: 500;\n  border-radius: 5px;\n  margin-left: 5px;\n}\n.FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnOrange___GQ1xn:hover, .FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnOrange___GQ1xn:active, .FullQuestionContainer__FullQuestionContainer___3dn7O .FullQuestionContainer__BtnOrange___GQ1xn:focus {\n  background-color: #f59130 !important;\n}", ""]);
 
 // exports
 exports.locals = {
 	"FullQuestionContainer": "FullQuestionContainer__FullQuestionContainer___3dn7O",
 	"WithMargin": "FullQuestionContainer__WithMargin___2M4A9",
 	"BtnGreen": "FullQuestionContainer__BtnGreen___GFo9i",
-	"BtnOrange": "FullQuestionContainer__BtnOrange___GQ1xn",
-	"InfoBar": "FullQuestionContainer__InfoBar___qElLv",
-	"Category": "FullQuestionContainer__Category___1onYZ",
-	"Tags": "FullQuestionContainer__Tags___jq6LW",
-	"FlexBox": "FullQuestionContainer__FlexBox___2vbu0",
-	"IconButton": "FullQuestionContainer__IconButton___1v4LW"
+	"BtnOrange": "FullQuestionContainer__BtnOrange___GQ1xn"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--9-1!./node_modules/postcss-loader/src??ref--9-2!./node_modules/sass-loader/dist/cjs.js??ref--9-3!./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss ***!
+  \********************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".InfoBar__InfoBar___Aezlk {\n  border-top: 1px solid #bbb;\n  margin-top: 35px;\n  padding-top: 5px;\n  padding-bottom: 20px;\n}\n.InfoBar__InfoBar___Aezlk h4 {\n  font-size: 1.1em;\n  color: #676767;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7,\n.InfoBar__InfoBar___Aezlk .InfoBar__Tags___3VRRf {\n  color: #404040;\n  font-size: 1.1em;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7 {\n  margin-bottom: 8px;\n}\n.InfoBar__InfoBar___Aezlk p {\n  font-size: 1.4em;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__FlexBox___1QCI1 {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU {\n  border: none;\n  background-color: transparent;\n  border-radius: 100%;\n  cursor: pointer;\n  width: 60px;\n  height: 60px;\n}\n.InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.InfoBar__InfoBar___Aezlk i {\n  font-size: 2.5em;\n}\n\n@media (max-width: 700px) {\n  .InfoBar__InfoBar___Aezlk h4 {\n    font-size: 1.1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7,\n.InfoBar__InfoBar___Aezlk .InfoBar__Tags___3VRRf {\n    font-size: 1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__Category___1Fvr7 {\n    margin-bottom: 8px;\n  }\n  .InfoBar__InfoBar___Aezlk p {\n    font-size: 1.1em;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__FlexBox___1QCI1 {\n    flex-wrap: wrap;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU {\n    border: none;\n    background-color: transparent;\n    border-radius: 100%;\n    cursor: pointer;\n    width: 45px;\n    height: 45px;\n  }\n  .InfoBar__InfoBar___Aezlk .InfoBar__IconButton___1NgiU:hover {\n    background-color: rgba(0, 0, 0, 0.05);\n  }\n  .InfoBar__InfoBar___Aezlk i {\n    font-size: 2em;\n  }\n}", ""]);
+
+// exports
+exports.locals = {
+	"InfoBar": "InfoBar__InfoBar___Aezlk",
+	"Category": "InfoBar__Category___1Fvr7",
+	"Tags": "InfoBar__Tags___3VRRf",
+	"FlexBox": "InfoBar__FlexBox___1QCI1",
+	"IconButton": "InfoBar__IconButton___1NgiU"
 };
 
 /***/ }),
@@ -162,6 +182,11 @@ var FullQuestion = function FullQuestion(props) {
       className: className
     })));
   });
+
+  if (props.correct) {
+    props.registerAnswerHandler(props.selectedAlternative === question.correctAlternative);
+  }
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("article", {
     className: _FullQuestion_scss__WEBPACK_IMPORTED_MODULE_2___default.a.FullQuestion
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -183,6 +208,7 @@ FullQuestion.propTypes = {
     content: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
     correctAlternative: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any
   }),
+  registerAnswerHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
   selectedAlternative: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
   setSelectedAlternative: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func
 };
@@ -238,11 +264,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UI_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../UI/Spinner/Spinner */ "./resources/js/components/UI/Spinner/Spinner.js");
 /* harmony import */ var _UI_ErrorMessage_ErrorMessage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../UI/ErrorMessage/ErrorMessage */ "./resources/js/components/UI/ErrorMessage/ErrorMessage.js");
 /* harmony import */ var _FullQuestion_FullQuestion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./FullQuestion/FullQuestion */ "./resources/js/components/QuestionsContainer/FullQuestionContainer/FullQuestion/FullQuestion.js");
-/* harmony import */ var react_avatar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-avatar */ "./node_modules/react-avatar/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _utility__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../utility */ "./resources/js/components/utility.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _utility__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../utility */ "./resources/js/components/utility.js");
+/* harmony import */ var _InfoBar_InfoBar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./InfoBar/InfoBar */ "./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -338,26 +364,32 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
 
   var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
       _useState8 = _slicedToArray(_useState7, 2),
-      isOwner = _useState8[0],
-      setIsOwner = _useState8[1];
+      isAnswered = _useState8[0],
+      setIsAnswered = _useState8[1];
+
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
+      _useState10 = _slicedToArray(_useState9, 2),
+      isOwner = _useState10[0],
+      setIsOwner = _useState10[1];
 
   var questionId = props.match.params.question;
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     dispatch({
       type: REQUEST_START
     });
-    axios__WEBPACK_IMPORTED_MODULE_8___default.a.get("/questions/".concat(questionId)).then(function (response) {
+    axios__WEBPACK_IMPORTED_MODULE_7___default.a.get("/questions/".concat(questionId)).then(function (response) {
       var question = response.data.data;
       var relations = question.relations.map(function (user) {
         return user.pivot.relation;
       });
       setIsBookmarked(relations.includes('bookmark'));
       setIsOwner(relations.includes('owner'));
+      setIsAnswered(relations.includes('answer'));
       dispatch({
         type: REQUEST_SUCCESS,
         question: question
       });
-      Object(_utility__WEBPACK_IMPORTED_MODULE_9__["setupTooltips"])();
+      Object(_utility__WEBPACK_IMPORTED_MODULE_8__["setupTooltips"])();
     })["catch"](function (error) {
       console.error(error);
       dispatch({
@@ -365,7 +397,7 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
         error: error
       });
     });
-  }, [questionId, axios__WEBPACK_IMPORTED_MODULE_8___default.a]);
+  }, [questionId, axios__WEBPACK_IMPORTED_MODULE_7___default.a]);
 
   var verifyAnswerHandler = function verifyAnswerHandler() {
     setIsVerifying(true);
@@ -382,9 +414,9 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
     var request = null;
 
     if (activate) {
-      request = axios__WEBPACK_IMPORTED_MODULE_8___default.a.post("/questions/".concat(questionId, "/bookmark"));
+      request = axios__WEBPACK_IMPORTED_MODULE_7___default.a.post("/questions/".concat(questionId, "/bookmark"));
     } else {
-      request = axios__WEBPACK_IMPORTED_MODULE_8___default.a["delete"]("/questions/".concat(questionId, "/unbookmark"));
+      request = axios__WEBPACK_IMPORTED_MODULE_7___default.a["delete"]("/questions/".concat(questionId, "/unbookmark"));
     }
 
     request.then(function (response) {
@@ -394,7 +426,7 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
           type: REQUEST_SUCCESS,
           question: state.question
         });
-        Object(_utility__WEBPACK_IMPORTED_MODULE_9__["setupTooltips"])();
+        Object(_utility__WEBPACK_IMPORTED_MODULE_8__["setupTooltips"])();
       }
     })["catch"](function (error) {
       dispatch({
@@ -412,7 +444,7 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
     dispatch({
       type: REQUEST_START
     });
-    axios__WEBPACK_IMPORTED_MODULE_8___default.a["delete"]("/questions/".concat(questionId)).then(function (response) {
+    axios__WEBPACK_IMPORTED_MODULE_7___default.a["delete"]("/questions/".concat(questionId)).then(function (response) {
       if (response.status === 200) {
         props.history.replace('/questions');
       }
@@ -422,6 +454,21 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
         error: error
       });
     });
+  };
+
+  var registerAnswerHandler = function registerAnswerHandler(correctAnswered) {
+    if (!isAnswered) {
+      console.log(correctAnswered);
+      axios__WEBPACK_IMPORTED_MODULE_7___default.a.post("/questions/".concat(questionId, "/answer")).then(function (response) {
+        if (response.status === 200) {
+          //eslint-disable-next-line
+          M.toast({
+            html: 'Questão Respondida'
+          });
+          setIsAnswered(true);
+        }
+      });
+    }
   };
 
   var content = null;
@@ -434,11 +481,14 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
     });
   } else {
     var validOwner = state.question.owner && state.question.owner.length;
+    var ownerName = validOwner ? state.question.owner[0].name : '';
+    var subject = state.question.subject ? state.question.subject.name : '';
     content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_FullQuestion_FullQuestion__WEBPACK_IMPORTED_MODULE_5__["default"], {
       question: state.question,
       correct: isVerifying,
       selectedAlternative: selectedAlternative,
-      setSelectedAlternative: setSelectedAlternative
+      setSelectedAlternative: setSelectedAlternative,
+      registerAnswerHandler: registerAnswerHandler
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: _FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.WithMargin
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
@@ -451,54 +501,17 @@ var FullQuestionContainer = function FullQuestionContainer(props) {
       onClick: resetHandler
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
       className: "material-icons left"
-    }, "refresh"), "Restaurar")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: _FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.InfoBar
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_avatar__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      color: "green",
-      name: validOwner ? state.question.owner[0].name : '',
-      size: "40",
-      round: true
-    }), "\xA0\xA0por ", validOwner ? state.question.owner[0].name : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: _FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.Category
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Categoria: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, state.question.subject ? state.question.subject.name : '')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: _FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.Tags
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Tags: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, state.question.tags)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: _FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.FlexBox
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "green-text"
-    }, "65%"), " acertaram essa quest\xE3o"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, isBookmarked ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-      className: "".concat(_FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.IconButton, " yellow-text text-darken-2 tooltipped"),
-      onClick: function onClick() {
-        return toggleBookmarkHandler(false);
-      },
-      "data-position": "bottom",
-      "data-tooltip": "Remover dos Favoritos"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-      className: "material-icons"
-    }, "star")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-      className: "".concat(_FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.IconButton, " yellow-text text-darken-2 tooltipped"),
-      onClick: function onClick() {
-        return toggleBookmarkHandler(true);
-      },
-      "data-position": "bottom",
-      "data-tooltip": "Adicionar aos Favoritos"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-      className: "material-icons"
-    }, "stars")), isOwner && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-      className: "".concat(_FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.IconButton, " blue-text tooltipped"),
-      onClick: editQuestionHandler,
-      "data-position": "bottom",
-      "data-tooltip": "Editar"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-      className: "material-icons"
-    }, "edit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-      className: "".concat(_FullQuestionContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.IconButton, " red-text tooltipped"),
-      onClick: deleteQuestionHandler,
-      "data-position": "bottom",
-      "data-tooltip": "Excluir"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-      className: "material-icons"
-    }, "delete")))))));
+    }, "refresh"), "Restaurar")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_InfoBar_InfoBar__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      ownerName: ownerName,
+      subject: subject,
+      tags: state.question.tags,
+      isOwner: isOwner,
+      isBookmarked: isBookmarked,
+      isAnswered: isAnswered,
+      deleteQuestionHandler: deleteQuestionHandler,
+      toggleBookmarkHandler: toggleBookmarkHandler,
+      editQuestionHandler: editQuestionHandler
+    }));
   }
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -515,7 +528,7 @@ FullQuestionContainer.propTypes = {
     params: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any
   })
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["withRouter"])(FullQuestionContainer));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["withRouter"])(FullQuestionContainer));
 
 /***/ }),
 
@@ -542,6 +555,129 @@ options.transform = transform
 options.insertInto = undefined;
 
 var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.js":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.js ***!
+  \*********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_avatar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-avatar */ "./node_modules/react-avatar/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _InfoBar_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./InfoBar.scss */ "./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss");
+/* harmony import */ var _InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_InfoBar_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+var InfoBar = function InfoBar(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.InfoBar
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_avatar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    color: "green",
+    name: props.ownerName,
+    size: "40",
+    round: true
+  }), "\xA0\xA0por ", props.ownerName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.Category
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("strong", null, "Categoria: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, props.subject)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.Tags
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("strong", null, "Tags: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, props.tags)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.FlexBox
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+    className: "green-text"
+  }, "65%"), " acertaram essa quest\xE3o"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, props.isAnswered && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: "".concat(_InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.IconButton, " green-text tooltipped"),
+    "data-position": "bottom",
+    "data-tooltip": "Quest\xE3o Respondida"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+    className: "material-icons"
+  }, "check")), props.isBookmarked ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: "".concat(_InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.IconButton, " yellow-text text-darken-2 tooltipped"),
+    onClick: function onClick() {
+      return props.toggleBookmarkHandler(false);
+    },
+    "data-position": "bottom",
+    "data-tooltip": "Remover dos Favoritos"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+    className: "material-icons"
+  }, "star")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: "".concat(_InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.IconButton, " yellow-text text-darken-2 tooltipped"),
+    onClick: function onClick() {
+      return props.toggleBookmarkHandler(true);
+    },
+    "data-position": "bottom",
+    "data-tooltip": "Adicionar aos Favoritos"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+    className: "material-icons"
+  }, "stars")), props.isOwner && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: "".concat(_InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.IconButton, " blue-text tooltipped"),
+    onClick: props.editQuestionHandler,
+    "data-position": "bottom",
+    "data-tooltip": "Editar"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+    className: "material-icons"
+  }, "edit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: "".concat(_InfoBar_scss__WEBPACK_IMPORTED_MODULE_3___default.a.IconButton, " red-text tooltipped"),
+    onClick: props.deleteQuestionHandler,
+    "data-position": "bottom",
+    "data-tooltip": "Excluir"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+    className: "material-icons"
+  }, "delete"))))));
+};
+
+InfoBar.propTypes = {
+  deleteQuestionHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  editQuestionHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  isAnswered: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
+  isBookmarked: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
+  isOwner: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
+  ownerName: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+  subject: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+  tags: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+  toggleBookmarkHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func
+};
+/* harmony default export */ __webpack_exports__["default"] = (InfoBar);
+
+/***/ }),
+
+/***/ "./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader??ref--9-1!../../../../../../node_modules/postcss-loader/src??ref--9-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--9-3!./InfoBar.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/FullQuestionContainer/InfoBar/InfoBar.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 

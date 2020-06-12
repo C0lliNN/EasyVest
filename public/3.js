@@ -200,7 +200,13 @@ var QuestionItem = function QuestionItem(props) {
     className: "material-icons"
   }, "label_outline"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, question.tags && question.tags.length ? question.tags : 'Sem tags'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     className: "crud-icons"
-  }, relations.includes('owner') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+  }, relations.includes('answer') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: "tooltipped",
+    "data-position": "bottom",
+    "data-tooltip": "Quest\xE3o Respondida"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "material-icons green-text"
+  }, "check")), relations.includes('owner') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     className: "tooltipped",
     "data-position": "bottom",
     "data-tooltip": "Editar",
@@ -416,25 +422,9 @@ var QuestionsList = function QuestionsList(props) {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(endPoint).then(function (response) {
       if (response.status === 200) {
         console.log(response);
-        var questions = response.data.data;
-
-        if (!location.search) {
-          questions = questions.filter(function (question) {
-            var relations = question.relations.map(function (user) {
-              return user.pivot.relation;
-            });
-
-            if (location.pathname === '/questions') {
-              return relations.includes('owner');
-            }
-
-            return relations.includes('bookmark');
-          });
-        }
-
         dispatch({
           type: REQUEST_SUCCESS,
-          questions: questions
+          questions: response.data.data
         });
         setLastPage(response.data.last_page);
         setCurrentPage(response.data.current_page);

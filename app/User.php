@@ -6,8 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
-{
+class User extends Authenticatable {
     use Notifiable;
 
     /**
@@ -30,22 +29,27 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'email_verified_at' => 'datetime'
     ];
 
-    public function myQuestions()
-    {
+    public function myQuestions() {
         return $this->belongsToMany(Question::class)->wherePivot(
             'relation',
             'owner'
         );
     }
 
-    public function bookmarks()
-    {
+    public function bookmarks() {
         return $this->belongsToMany(Question::class)->wherePivot(
             'relation',
             'bookmark'
+        );
+    }
+
+    public function answers() {
+        return $this->belongsToMany(Question::class)->wherePivot(
+            'relation',
+            'answer'
         );
     }
 }

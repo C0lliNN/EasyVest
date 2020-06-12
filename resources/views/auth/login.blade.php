@@ -64,7 +64,7 @@ EasyVest - Login
                         </div>
 
                         <div class="row center">
-                            <button type="submit" class="btn btn-blue">
+                            <button type="submit" class="btn btn-blue z-depth-0">
                                 Login
                             </button>
                         </div>

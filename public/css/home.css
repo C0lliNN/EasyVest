@@ -1,3 +1,11 @@
+.blue {
+  background-color: #008aff !important;
+}
+
+strong {
+  font-weight: bold !important;
+}
+
 html {
   min-height: 100%;
 }
@@ -6,6 +14,15 @@ body {
   background-color: #f8fafc;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
 }
 
 .brand-logo {
@@ -39,7 +56,7 @@ body {
   color: #f8fafc !important;
   display: inline;
   padding: 8px 20px;
-  margin-left: default;
+  margin-left: default !important;
 }
 
 .main-nav .btn-blue:hover,
@@ -82,7 +99,8 @@ body {
   color: #f8fafc !important;
   display: inline;
   padding: 8px 20px;
-  margin-left: 30px;
+  margin-left: 30px !important;
+  font-size: 1.1em;
 }
 
 .sidenav .btn-blue:hover,
@@ -114,14 +132,6 @@ body {
   min-height: 80px !important;
 }
 
-.blue {
-  background-color: #008aff !important;
-}
-
-strong {
-  font-weight: bold !important;
-}
-
 .presentations {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -144,7 +154,7 @@ strong {
   color: #f8fafc !important;
   display: default;
   padding: default;
-  margin-left: default;
+  margin-left: default !important;
   font-size: 1.4em;
 }
 

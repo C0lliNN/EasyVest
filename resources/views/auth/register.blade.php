@@ -76,7 +76,7 @@ EasyVest - Cadastro
                         </div>
 
                         <div class="row center">
-                            <button type="submit" class="btn btn-blue">
+                            <button type="submit" class="btn btn-blue z-depth-0">
                                 Cadastrar
                             </button>
                         </div>
