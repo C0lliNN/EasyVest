@@ -4,16 +4,14 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class Question extends JsonResource
-{
+class Question extends JsonResource {
     /**
      * Transform the resource into an array.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
-    public function toArray($request)
-    {
+    public function toArray($request) {
         return [
             'id' => $this->id,
             'content' => $this->content,
@@ -27,7 +25,7 @@ class Question extends JsonResource
             'correctAlternative' => $this->correctAlternative,
             'created_at' => $this->created_at,
             'relations' => $this->relations,
-            'owner' => $this->owner,
+            'owner' => $this->owner[0]
         ];
     }
 }

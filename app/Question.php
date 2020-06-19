@@ -5,8 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
-class Question extends Model
-{
+class Question extends Model {
     protected $fillable = [
         'content',
         'alternativeA',
@@ -16,33 +15,36 @@ class Question extends Model
         'alternativeE',
         'subject_id',
         'tags',
-        'correctAlternative',
+        'correctAlternative'
     ];
 
-    public function owner()
-    {
+    public function owner() {
         return $this->belongsToMany(User::class)
             ->wherePivot('relation', 'owner')
             ->wherePivot('question_id', $this->id);
     }
 
-    public function bookmarks()
-    {
+    public function bookmarks() {
         return $this->hasMany(User::class)->wherePivot('relation', 'bookmark');
     }
 
-    public function subject()
-    {
+    public function subject() {
         return $this->belongsTo(Subject::class);
     }
 
-    public function answers()
-    {
+    public function lists() {
+        return $this->belongsToMany(
+            QuestionList::class,
+            'list_question',
+            'question_id'
+        );
+    }
+
+    public function answers() {
         return $this->hasMany(User::class);
     }
 
-    public function users()
-    {
+    public function users() {
         return $this->belongsToMany(User::class);
     }
 
@@ -52,8 +54,7 @@ class Question extends Model
      *
      */
 
-    public function relations()
-    {
+    public function relations() {
         return $this->belongsToMany(User::class)
             ->withPivot('relation')
             ->wherePivot('user_id', Auth::id());

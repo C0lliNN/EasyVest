@@ -132,6 +132,10 @@ h6 {
   min-height: 80px !important;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
 #profile {
   background-color: #f9f9f9;
   padding: 0px 20px;

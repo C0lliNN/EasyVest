@@ -23,6 +23,7 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/questions/bookmarks', 'API\QuestionsController@getBookmarks');
     Route::get('/questions/answers', 'API\QuestionsController@answers');
     Route::apiResource('/questions', 'API\QuestionsController');
+    Route::apiResource('/lists', 'API\ListsController');
     Route::post(
         '/questions/{question}/bookmark',
         'API\QuestionsController@bookmarkQuestion'

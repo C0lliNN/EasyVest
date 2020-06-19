@@ -1,0 +1,86 @@
+@use '../../../../../sass/mixins';
+@use '../../../../../sass/variables';
+
+.InfoBar {
+  border-top: 1px solid variables.$very-light-gray;
+  margin-top: 35px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  h4 {
+    font-size: variables.$font-size4;
+    color: variables.$gray;
+    display: flex;
+    align-items: center;
+    a {
+      color: variables.$gray;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .Category,
+  .Tags {
+    color: variables.$dark-gray;
+    font-size: variables.$font-size4;
+  }
+
+  .Category {
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: variables.$font-size3;
+  }
+  .FlexBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      color: variables.$light-gray;
+    }
+  }
+  .IconButton {
+    @include mixins.icon-button;
+    width: 60px;
+    height: 60px;
+  }
+  i {
+    font-size: 2.5em;
+  }
+  .Avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .InfoBar {
+    h4 {
+      font-size: variables.$font-size4;
+    }
+    .Category,
+    .Tags {
+      font-size: 1em;
+    }
+
+    .Category {
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: variables.$font-size4;
+    }
+    .FlexBox {
+      flex-wrap: wrap;
+    }
+    .IconButton {
+      @include mixins.icon-button;
+      width: 45px;
+      height: 45px;
+    }
+    i {
+      font-size: 2em;
+    }
+  }
+}

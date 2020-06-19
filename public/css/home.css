@@ -132,6 +132,10 @@ h6 {
   min-height: 80px !important;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
 .presentations {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -221,11 +225,11 @@ h6 {
 }
 
 .card {
-  border-radius: 20px;
   padding-top: 5px;
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 25px;
+  box-sizing: border-box;
 }
 
 .card h2 {

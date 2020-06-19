@@ -19,22 +19,73 @@ class QuestionsController extends Controller {
     const RECORDS_PER_PAGE = 5;
 
     public function index() {
+        if (request()->query('listBuilder')) {
+            return $this->indexForListBuilder();
+        }
+
         $query = request()->query('query');
 
         if ($query) {
-            $queryBuilder = Question::with('subject')
-                ->with('relations')
+            $questions = Question::query()
                 ->where('content', 'LIKE', "%{$query}%")
                 ->orWhere('tags', 'LIKE', "%{$query}%");
         } else {
             $user = User::findOrFail(Auth::id());
-            $queryBuilder = $user
-                ->myQuestions()
-                ->with('relations')
-                ->with('subject');
+            $questions = $user->myQuestions();
         }
 
-        return $queryBuilder->paginate(self::RECORDS_PER_PAGE);
+        return ResourcesQuestion::collection(
+            $questions->paginate(self::RECORDS_PER_PAGE)
+        );
+    }
+
+    /**
+     * Display a listing of the resource. This method will be used to Build a list of questions
+     *
+     * @return \Illuminate\Http\Response
+     */
+
+    public function indexForListBuilder() {
+        $user = User::findOrFail(Auth::id());
+
+        $searchFrom = request()->query('searchFrom');
+
+        switch ($searchFrom) {
+            case 'all':
+                $questions = Question::query();
+                break;
+            case 'my-questions':
+                $questions = $user->myQuestions();
+                break;
+            case 'favorite':
+                $questions = $user->bookmarkedQuestions();
+                break;
+            case 'answers':
+                $questions = $user->answeredQuestions();
+                break;
+            default:
+                $questions = Question::query();
+        }
+
+        $subjectId = request()->query('subject');
+
+        $questions->where('subject_id', $subjectId);
+
+        $tag = request()->query('tag');
+
+        if ($tag) {
+            $questions->where('tags', 'LIKE', "%{$tag}%");
+        }
+
+        $statement = request()->query('statement');
+
+        if ($statement) {
+            $questions->where('content', 'LIKE', "%{$statement}%");
+        }
+
+        return ResourcesQuestion::collection(
+            $questions->paginate(self::RECORDS_PER_PAGE)
+        );
     }
 
     /**
@@ -58,7 +109,7 @@ class QuestionsController extends Controller {
 
         $question->users()->attach(Auth::id(), ['relation' => 'owner']);
 
-        return response('success', 200);
+        return response(200);
     }
 
     /**
@@ -79,7 +130,7 @@ class QuestionsController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function update(CreateQuestionRequest $request, Question $question) {
-        if ($question->user_id === Auth::id()) {
+        if ($question->owner()->firstOrFail()->id === Auth::id()) {
             $question->update([
                 'content' => $request->content,
                 'alternativeA' => $request->alternativeA,
@@ -92,49 +143,74 @@ class QuestionsController extends Controller {
                 'tags' => implode(', ', $request->tags)
             ]);
 
-            return response('success', 200);
+            return response(200);
         }
 
-        return response('', 401);
+        return response(401);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  Question  $question
      * @return \Illuminate\Http\Response
      */
+
     public function destroy(Question $question) {
         if ($question->owner()->firstOrFail()->id === Auth::id()) {
             $user = User::findOrFail(Auth::id());
             $user->myQuestions()->detach($question->id);
             $question->delete();
-            return response('success', 200);
+            return response(200);
         }
 
-        return response('', 401);
+        return response(401);
     }
+
+    /**
+     * Returns all questions bookmarked by the user.
+     *
+     * @return \Illuminate\Http\Response
+     */
 
     public function getBookmarks() {
         $user = User::findOrFail(Auth::id());
-        return $user
-            ->bookmarks()
-            ->with('relations')
-            ->with('subject')
-            ->paginate(self::RECORDS_PER_PAGE);
+        return ResourcesQuestion::collection(
+            $user->bookmarkedQuestions()->paginate(self::RECORDS_PER_PAGE)
+        );
     }
+
+    /**
+     * Adds the specified question to the users bookmarks
+     *
+     * @param Question $question
+     * @return \Illuminate\Http\Response
+     */
 
     public function bookmarkQuestion(Question $question) {
         $question->users()->attach(Auth::id(), ['relation' => 'bookmark']);
-
-        return response('success', 200);
+        return response(200);
     }
+
+    /**
+     * Removes the specified question from the users bookmarks
+     *
+     * @param Question $question
+     * @return \Illuminate\Http\Response
+     */
 
     public function unbookmarkQuestion(Question $question) {
         $user = User::findOrFail(Auth::id());
-        $user->bookmarks()->detach($question->id);
-        return response('success', 200);
+        $user->bookmarkedQuestions()->detach($question->id);
+        return response(200);
     }
+
+    /**
+     * Registers an answer to the specific Question. A user can only answer a question once.
+     *
+     * @param Question $question
+     * @return \Illuminate\Http\Response
+     */
 
     public function createAnswer(Question $question) {
         $user = User::findOrFail(Auth::id());
@@ -145,18 +221,21 @@ class QuestionsController extends Controller {
                 ->count() == 0
         ) {
             $question->users()->attach(Auth::id(), ['relation' => 'answer']);
-            return response('success', 200);
+            return response(200);
         }
 
         return response('Question already Answered', 400);
     }
+    /**
+     * Returns all questions answered by the user.
+     *
+     * @return \Illuminate\Http\Response
+     */
 
     public function answers() {
         $user = User::findOrFail(Auth::id());
-        return $user
-            ->answers()
-            ->with('relations')
-            ->with('subject')
-            ->paginate(self::RECORDS_PER_PAGE);
+        return ResourcesQuestion::collection(
+            $user->answeredQuestions()->paginate(self::RECORDS_PER_PAGE)
+        );
     }
 }

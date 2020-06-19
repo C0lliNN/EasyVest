@@ -34,6 +34,15 @@ class User extends Authenticatable {
         'email_verified_at' => 'datetime'
     ];
 
+    public function myLists() {
+        return $this->belongsToMany(
+            QuestionList::class,
+            'list_user',
+            'user_id',
+            'list_id'
+        )->wherePivot('relation', 'owner');
+    }
+
     public function myQuestions() {
         return $this->belongsToMany(Question::class)->wherePivot(
             'relation',
@@ -41,14 +50,14 @@ class User extends Authenticatable {
         );
     }
 
-    public function bookmarks() {
+    public function bookmarkedQuestions() {
         return $this->belongsToMany(Question::class)->wherePivot(
             'relation',
             'bookmark'
         );
     }
 
-    public function answers() {
+    public function answeredQuestions() {
         return $this->belongsToMany(Question::class)->wherePivot(
             'relation',
             'answer'

@@ -1,0 +1,83 @@
+@use '../../../../sass/variables';
+@use '../../../../sass/mixins';
+
+.ListBuilder {
+  .FormGroup {
+    margin: 10px auto;
+  }
+  label {
+    display: block;
+    width: 100%;
+    font-size: variables.$font-size4;
+    color: variables.$dark-gray !important;
+    margin-bottom: 10px;
+  }
+
+  .Select,
+  .Input {
+    display: block;
+    width: 100%;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: variables.$font-size3;
+    font-weight: 600;
+  }
+
+  .Select {
+    div {
+      padding: 10px 0;
+    }
+    &::before {
+      border-bottom-color: variables.$very-light-gray;
+    }
+    &:hover::before,
+    &:active::before,
+    &:focus::before,
+    &::after {
+      border-bottom-color: variables.$blue !important;
+    }
+  }
+
+  .Input {
+    border-color: variables.$very-light-gray !important;
+    &:focus,
+    &:active {
+      border-bottom: 1px solid variables.$blue !important;
+      box-shadow: 0 1px 0 0 variables.$blue !important;
+    }
+
+    &::placeholder {
+      color: transparentize($color: variables.$gray, $amount: 0.3);
+    }
+  }
+
+  .QuestionItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Total {
+    color: variables.$gray;
+    font-size: variables.$font-size4 - 0.2;
+  }
+
+  .IconButton {
+    @include mixins.icon-button;
+    $size: 22px;
+    height: $size;
+    width: $size;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  .CreateButton {
+    @include mixins.green-button;
+    display: block;
+    width: 100%;
+    font-size: variables.$font-size3;
+  }
+}

@@ -1,0 +1,19 @@
+@use '../../../../sass/mixins';
+@use '../../../../sass/variables';
+
+.QuestionViewer {
+  @include mixins.block;
+
+  .WithMargin {
+    margin: 15px 0px;
+  }
+
+  .BtnGreen {
+    @include mixins.green-button;
+  }
+
+  .BtnOrange {
+    @include mixins.orange-button;
+    margin-left: 5px;
+  }
+}

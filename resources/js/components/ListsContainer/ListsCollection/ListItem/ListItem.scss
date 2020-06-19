@@ -1,0 +1,39 @@
+@use '../../../../../sass/variables';
+@use '../../../../../sass/mixins';
+
+.ListItem {
+  .Title {
+    color: #303030;
+    transition: 0.3s ease-in-out color;
+    &:hover {
+      color: variables.$blue;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Subject {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .Subject,
+  .Questions {
+    display: flex;
+    align-items: center;
+    color: variables.$transparent-gray;
+  }
+
+  .Icons {
+    margin: 0;
+    button {
+      @include mixins.icon-button;
+      padding: 8px;
+    }
+  }
+}

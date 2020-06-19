@@ -4,6 +4,7 @@
 
 .form {
   @include mixins.card;
+  border-radius: 20px;
   h2 {
     font-size: 2.5em;
     font-weight: variables.$font-weight2;

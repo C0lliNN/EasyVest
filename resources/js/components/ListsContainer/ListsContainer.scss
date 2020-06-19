@@ -1,0 +1,21 @@
+@use '../../../sass/variables';
+@use '../../../sass/mixins';
+
+.ListsContainer {
+  @include mixins.block;
+
+  h3 {
+    color: variables.$indigo;
+    font-size: variables.$font-size2;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .Container {
+    @include mixins.card;
+  }
+}
+
+article.question {
+  padding: 20px auto;
+}

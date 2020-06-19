@@ -1,0 +1,26 @@
+@use '../../../../sass/mixins';
+@use '../../../../sass/variables';
+
+.ListViewer {
+  @include mixins.block;
+
+  h3 {
+    text-align: center;
+    color: variables.$indigo;
+    font-size: variables.$font-size2 + 0.4;
+    font-weight: variables.$font-weight2;
+  }
+
+  .WithMargin {
+    margin: 15px 0px;
+  }
+
+  .BtnGreen {
+    @include mixins.green-button;
+  }
+
+  .BtnOrange {
+    @include mixins.orange-button;
+    margin-left: 5px;
+  }
+}

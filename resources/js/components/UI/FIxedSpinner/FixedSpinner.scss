@@ -1,0 +1,14 @@
+@use '../../../../sass/variables';
+
+.FixedSpinner {
+  position: fixed;
+  z-index: 100;
+  top: -7px;
+  background-color: transparentize(
+    $color: variables.$blue,
+    $amount: 0.5
+  ) !important;
+  div {
+    background-color: variables.$blue !important;
+  }
+}

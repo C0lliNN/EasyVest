@@ -28,6 +28,8 @@
         "sass-loader": "^8.0.0"
     },
     "dependencies": {
+        "@bit/mui-org.material-ui.menu-item": "^4.9.10",
+        "@bit/mui-org.material-ui.select": "^4.9.10",
         "@ckeditor/ckeditor5-build-classic": "git+https://github.com/fullhdpixel/ckeditor5-build-classic-base64.git",
         "@ckeditor/ckeditor5-image": "^19.0.1",
         "@ckeditor/ckeditor5-react": "^2.1.0",

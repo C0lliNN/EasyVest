@@ -1,0 +1,87 @@
+@use '../../../../../sass/variables';
+
+.Question {
+  .Content p {
+    font-size: variables.$font-size3;
+  }
+
+  .Content figure {
+    text-align: center;
+  }
+
+  .Content img {
+    margin-right: 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  .Alternative {
+    p {
+      font-size: variables.$font-size3 + 0.1;
+      padding: 10px;
+      color: variables.$gray;
+      cursor: pointer;
+      margin: 0;
+
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+
+    input {
+      &:not(checked) + div {
+        color: variables.$gray;
+        &:hover {
+          background: variables.$white3;
+        }
+      }
+      &:checked + div {
+        background-color: variables.$blue;
+        p {
+          color: variables.$white1;
+        }
+        &:hover {
+          background-color: variables.$blue;
+        }
+      }
+    }
+
+    .Red,
+    .Red:hover,
+    .Red:active,
+    .Red:focus {
+      background-color: variables.$red;
+    }
+
+    .Green,
+    .Green:hover,
+    .Green:active,
+    .Green:focus {
+      background-color: variables.$green;
+    }
+
+    .Red,
+    .Green {
+      p {
+        color: variables.$white1;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .Question {
+    .Content p {
+      font-size: variables.$font-size3 - 0.2;
+    }
+
+    .Alternative {
+      p {
+        font-size: variables.$font-size3;
+      }
+    }
+  }
+}

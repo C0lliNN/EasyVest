@@ -132,3 +132,7 @@ h6 {
   min-height: 80px !important;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+

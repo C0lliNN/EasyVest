@@ -11,49 +11,6 @@
     text-align: center;
   }
 
-  a.Option {
-    color: variables.$blue;
-  }
-
-  .Option.Active {
-    background-color: variables.$blue !important;
-    color: variables.$white1;
-  }
-
-  .Option.Active span {
-    color: #eafaf9 !important;
-  }
-
-  .SearchBox {
-    display: flex;
-    align-items: center;
-    input {
-      margin-right: 20px;
-      &::placeholder {
-        color: rgba(0, 0, 0, 0.6);
-        font-size: 1.1em;
-      }
-      &:focus {
-        border-bottom-color: variables.$blue !important;
-        box-shadow: 0 1px 0 0 variables.$blue !important;
-      }
-    }
-    i {
-      font-size: 1.8em !important;
-    }
-  }
-
-  .SearchButton {
-    @include mixins.blue-button(default, default, default);
-  }
-
-  .NewQuestionButton {
-    @include mixins.green-button;
-    display: block;
-    width: 100%;
-    font-size: 1.2em;
-  }
-
   .Container {
     @include mixins.card;
   }

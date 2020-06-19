@@ -54,11 +54,11 @@
 }
 
 @mixin card {
-  border-radius: 20px;
   padding-top: 5px;
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 25px;
+  box-sizing: border-box;
 }
 
 @mixin block {

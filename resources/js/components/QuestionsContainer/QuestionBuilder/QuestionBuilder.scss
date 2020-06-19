@@ -1,0 +1,41 @@
+@use '../../../../sass/variables';
+@use '../../../../sass/mixins';
+
+.QuestionBuilder {
+  p.Label {
+    font-size: variables.$font-size4;
+    font-weight: variables.$font-weight2;
+  }
+
+  .Select {
+    display: block;
+    width: 100%;
+    div {
+      padding: 10px 0;
+    }
+    &::before {
+      border-bottom-color: variables.$very-light-gray;
+    }
+    &:hover::before,
+    &:active::before,
+    &:focus::before,
+    &::after {
+      border-bottom-color: variables.$blue !important;
+    }
+  }
+
+  .CreateButton {
+    @include mixins.green-button;
+    display: block;
+    width: 100%;
+    margin: 10px auto 3px auto;
+    font-size: variables.$font-size3;
+  }
+
+  .ClearButton {
+    @include mixins.orange-button;
+    display: block;
+    width: 100%;
+    font-size: variables.$font-size3;
+  }
+}
