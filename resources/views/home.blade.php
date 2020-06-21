@@ -68,12 +68,10 @@ EasyVest – Listas e Questões
                         </div>
                         <div class="card-content pb-5">
                             <h5 class="h4 lh-130 mb-3">
-                                Increase your audience
+                                Para Alunos
                             </h5>
                             <p class="text-muted mb-0">
-                                Quick Website UI Kit (FREE) contains
-                                components and pages that are easy to
-                                customize and change.
+                                Melhore seu desempenho escolar estudando através de questões
                             </p>
                         </div>
                     </div>
@@ -88,12 +86,10 @@ EasyVest – Listas e Questões
                         </div>
                         <div class="card-content">
                             <h5 class="h4 lh-130 mb-3">
-                                Unleash you creativity
+                                Para Professores
                             </h5>
                             <p class="text-muted mb-0">
-                                Quick Website UI Kit (FREE) contains
-                                components and pages that are easy to
-                                customize and change.
+                                Adicione uma ferramenta de interação em suas aulas aumentado, assim, a participação.
                             </p>
                         </div>
                     </div>
@@ -106,11 +102,10 @@ EasyVest – Listas e Questões
                                 style="height: 150px;" alt="Illustration" />
                         </div>
                         <div class="card-content">
-                            <h5 class="h4 lh-130 mb-3">Get more results</h5>
+                            <h5 class="h4 lh-130 mb-3">Para Escolas</h5>
                             <p class="text-muted mb-0">
-                                Quick Website UI Kit (FREE) contains
-                                components and pages that are easy to
-                                customize and change.
+                                Estimule que professores e alunos utilizem essa ferramenta para que o aprendizado se
+                                torne mais dinâmico.
                             </p>
                         </div>
                     </div>
