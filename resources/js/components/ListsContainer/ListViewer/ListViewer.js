@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useReducer } from 'react';
 import { useRouteMatch } from 'react-router-dom';
 import styles from './ListViewer.scss';
 import Axios from 'axios';
@@ -6,35 +6,87 @@ import Spinner from '../../UI/Spinner/Spinner';
 import ErrorMessage from '../../UI/ErrorMessage/ErrorMessage';
 import Question from '../../QuestionsContainer/QuestionViewer/Question/Question';
 import InfoBar from '../../QuestionsContainer/QuestionViewer/InfoBar/InfoBar';
+import { setupTooltips } from '../../../utility';
+
+const initialState = {
+  question: {},
+  isLoading: false,
+  error: null,
+};
+
+const REQUEST_START = 'REQUEST_START';
+const REQUEST_SUCCESS = 'REQUEST_SUCCESS';
+const REQUEST_FAIL = 'REQUEST_FAIL';
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case REQUEST_START: {
+      return {
+        ...state,
+        isLoading: true,
+      };
+    }
+    case REQUEST_SUCCESS: {
+      return {
+        isLoading: false,
+        list: action.list,
+        error: null,
+      };
+    }
+    case REQUEST_FAIL: {
+      return {
+        isLoading: false,
+        list: null,
+        error: action.error,
+      };
+    }
+
+    default:
+      return state;
+  }
+};
 
 const ListViewer = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
   const match = useRouteMatch();
   const listId = match.params.list;
 
   const [correct, setCorrect] = useState(false);
 
-  const [list, setList] = useState();
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  const relations = list
-    ? list.relations.map((relation) => relation.pivot.relation)
-    : null;
+  const [isBookmarked, setIsBookmarked] = useState();
+  const [isOwner, setIsOwner] = useState();
+  const [isAnswered, setIsAnswered] = useState();
 
   useEffect(() => {
-    setIsLoading(true);
+    dispatch({
+      type: REQUEST_START,
+    });
 
     Axios.get(`/lists/${listId}`)
       .then((response) => {
         if (response.status === 200) {
-          setList(response.data.data);
+          const list = response.data.data;
+
+          const relations = list.relations.map(
+            (relation) => relation.pivot.relation
+          );
+
+          setIsBookmarked(relations.includes('bookmark'));
+          setIsOwner(relations.includes('owner'));
+          setIsAnswered(relations.includes('answer'));
+
+          dispatch({
+            type: REQUEST_SUCCESS,
+            list: list,
+          });
+          setupTooltips();
         }
       })
       .catch((error) => {
-        setError(error);
-      })
-      .finally(() => {
-        setIsLoading(false);
+        dispatch({
+          type: REQUEST_FAIL,
+          error: error,
+        });
       });
   }, [listId]);
 
@@ -46,17 +98,71 @@ const ListViewer = () => {
     setCorrect(false);
   };
 
+  const toggleBookmarkHandler = (activate) => {
+    dispatch({
+      type: REQUEST_START,
+    });
+
+    let request = null;
+
+    if (activate) {
+      request = Axios.post(`/lists/${listId}/bookmark`);
+    } else {
+      request = Axios.delete(`/lists/${listId}/unbookmark`);
+    }
+
+    request
+      .then((response) => {
+        if (response.status === 200) {
+          setIsBookmarked(activate);
+          dispatch({
+            type: REQUEST_SUCCESS,
+            list: state.list,
+          });
+          setupTooltips();
+        }
+      })
+      .catch((error) => {
+        dispatch({
+          type: REQUEST_FAIL,
+          error: error,
+        });
+      });
+  };
+
+  const editListHandler = () => {
+    history.push(`/lists/${listId}/edit`);
+  };
+
+  const deleteListHandler = () => {
+    dispatch({
+      type: REQUEST_START,
+    });
+    Axios.delete(`/lists/${listId}`)
+      .then((response) => {
+        if (response.status === 200) {
+          history.replace('/lists');
+        }
+      })
+      .catch((error) => {
+        dispatch({
+          type: REQUEST_FAIL,
+          error: error,
+        });
+      });
+  };
+
   let content = null;
 
-  if (isLoading) {
+  if (state.isLoading) {
     content = <Spinner />;
-  } else if (error) {
-    content = <ErrorMessage message={error.message} />;
-  } else if (list) {
+  } else if (state.error) {
+    content = <ErrorMessage message={state.error.message} />;
+  } else if (state.list) {
     content = (
       <div>
-        <h3>{list.title}</h3>
-        {list.questions.map((question) => {
+        <h3>{state.list.title}</h3>
+        {state.list.questions.map((question) => {
           return (
             <Question key={question.id} question={question} correct={correct} />
           );
@@ -79,16 +185,19 @@ const ListViewer = () => {
             </button>
           )}
           <InfoBar
-            ownerName={list.owner.name}
-            ownerId={list.owner.id}
-            ownerImage={list.owner.image}
-            subject={list.subject.name}
-            tags={list.tags}
-            isOwner={relations && relations.includes('owner')}
-            isAnswered={relations && relations.includes('answer')}
-            isBookmarked={relations && relations.includes('bookmark')}
+            ownerName={state.list.owner.name}
+            ownerId={state.list.owner.id}
+            ownerImage={state.list.owner.image}
+            subject={state.list.subject.name}
+            tags={state.list.tags}
+            isOwner={isOwner}
+            isAnswered={isAnswered}
+            isBookmarked={isBookmarked}
+            toggleBookmarkHandler={toggleBookmarkHandler}
+            editHandler={editListHandler}
+            deleteHandler={deleteListHandler}
             isList={true}
-            numberOfQuestions={list.questions.length}
+            numberOfQuestions={state.list.questions.length}
           />
         </div>
       </div>

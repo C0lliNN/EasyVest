@@ -10,12 +10,6 @@ use App\User;
 use Illuminate\Support\Facades\Auth;
 
 class QuestionsController extends Controller {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-
     const RECORDS_PER_PAGE = 5;
 
     public function index() {
@@ -38,12 +32,6 @@ class QuestionsController extends Controller {
             $questions->paginate(self::RECORDS_PER_PAGE)
         );
     }
-
-    /**
-     * Display a listing of the resource. This method will be used to Build a list of questions
-     *
-     * @return \Illuminate\Http\Response
-     */
 
     public function indexForListBuilder() {
         $user = User::findOrFail(Auth::id());
@@ -87,13 +75,6 @@ class QuestionsController extends Controller {
             $questions->paginate(self::RECORDS_PER_PAGE)
         );
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(CreateQuestionRequest $request) {
         $question = Question::create([
             'content' => $request->content,
@@ -111,24 +92,9 @@ class QuestionsController extends Controller {
 
         return response(200);
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show(Question $question) {
         return new ResourcesQuestion($question);
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(CreateQuestionRequest $request, Question $question) {
         if ($question->owner()->firstOrFail()->id === Auth::id()) {
             $question->update([
@@ -149,13 +115,6 @@ class QuestionsController extends Controller {
         return response(401);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  Question  $question
-     * @return \Illuminate\Http\Response
-     */
-
     public function destroy(Question $question) {
         if ($question->owner()->firstOrFail()->id === Auth::id()) {
             $user = User::findOrFail(Auth::id());
@@ -166,13 +125,6 @@ class QuestionsController extends Controller {
 
         return response(401);
     }
-
-    /**
-     * Returns all questions bookmarked by the user.
-     *
-     * @return \Illuminate\Http\Response
-     */
-
     public function getBookmarks() {
         $user = User::findOrFail(Auth::id());
         return ResourcesQuestion::collection(
@@ -180,37 +132,16 @@ class QuestionsController extends Controller {
         );
     }
 
-    /**
-     * Adds the specified question to the users bookmarks
-     *
-     * @param Question $question
-     * @return \Illuminate\Http\Response
-     */
-
     public function bookmarkQuestion(Question $question) {
         $question->users()->attach(Auth::id(), ['relation' => 'bookmark']);
         return response(200);
     }
-
-    /**
-     * Removes the specified question from the users bookmarks
-     *
-     * @param Question $question
-     * @return \Illuminate\Http\Response
-     */
 
     public function unbookmarkQuestion(Question $question) {
         $user = User::findOrFail(Auth::id());
         $user->bookmarkedQuestions()->detach($question->id);
         return response(200);
     }
-
-    /**
-     * Registers an answer to the specific Question. A user can only answer a question once.
-     *
-     * @param Question $question
-     * @return \Illuminate\Http\Response
-     */
 
     public function createAnswer(Question $question) {
         $user = User::findOrFail(Auth::id());
@@ -226,11 +157,6 @@ class QuestionsController extends Controller {
 
         return response('Question already Answered', 400);
     }
-    /**
-     * Returns all questions answered by the user.
-     *
-     * @return \Illuminate\Http\Response
-     */
 
     public function answers() {
         $user = User::findOrFail(Auth::id());

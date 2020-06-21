@@ -81,10 +81,7 @@ ListItem.propTypes = {
   bookmarkListHandler: PropTypes.func,
   bookmarkQuestionHandler: PropTypes.func,
   deleteListHandler: PropTypes.func,
-  deleteQuestionHandler: PropTypes.func,
   editListHandler: PropTypes.func,
-  editQuestionHandler: PropTypes.func,
-  eidtListHandler: PropTypes.func,
   list: PropTypes.shape({
     id: PropTypes.any,
     questions: PropTypes.array,

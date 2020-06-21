@@ -31,4 +31,5 @@ Route::middleware(['auth'])->group(function () {
     Route::view('questions/{path?}', 'questions')->name('questions');
     Route::view('questions/{path?}/{path2?}', 'questions')->name('questions');
     Route::view('lists/{path?}', 'lists')->name('lists');
+    Route::view('lists/{path?}/{path2?}', 'lists')->name('lists');
 });

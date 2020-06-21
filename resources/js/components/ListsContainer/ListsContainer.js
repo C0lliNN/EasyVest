@@ -1,10 +1,12 @@
-import React, { Suspense, useRef } from 'react';
+import React, { Suspense, useRef, lazy } from 'react';
 import styles from './ListsContainer.scss';
 import { Route, Switch, useHistory } from 'react-router-dom';
 import Spinner from '../UI/Spinner/Spinner';
 import Sidebar from '../Sidebar/Sidebar';
-import ListBuilder from './ListBuilder/ListBuilder';
-import ListsCollection from './ListsCollection/ListsCollection';
+
+const ListEdit = lazy(() => import('./ListEdit/ListEdit'));
+const ListsCollection = lazy(() => import('./ListsCollection/ListsCollection'));
+const ListBuilder = lazy(() => import('./ListBuilder/ListBuilder'));
 
 const ListsContainer = () => {
   const searchInputRef = useRef();
@@ -49,13 +51,10 @@ const ListsContainer = () => {
   return (
     <section className={`${styles.ListsContainer} container`}>
       <Switch>
+        <Route path="/lists/:list/edit" render={() => <h3>Editar Lista</h3>} />
+        <Route path="/lists/bookmarks" render={() => <h3>Favoritos</h3>} />
         <Route
-          path="/lists/:question/edit"
-          render={() => <h3>Editar Lista</h3>}
-        />
-        <Route path="/lists/bookmarked" render={() => <h3>Favoritos</h3>} />
-        <Route
-          path="/lists/answered"
+          path="/lists/answers"
           render={() => <h3>Listas Respondidas</h3>}
         />
         <Route path="/lists/create" render={() => <h3>Nova Lista</h3>} />
@@ -75,10 +74,10 @@ const ListsContainer = () => {
         <div className={`col s12 m7 card ${styles.Container}`}>
           <Switch>
             <Route
-              path="/lists/:question/edit"
+              path="/lists/:list/edit"
               render={() => (
                 <Suspense fallback={<Spinner />}>
-                  <h5>Edit List</h5>
+                  <ListEdit />
                 </Suspense>
               )}
             />

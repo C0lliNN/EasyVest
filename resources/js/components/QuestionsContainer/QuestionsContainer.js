@@ -2,13 +2,14 @@ import React, { Suspense, lazy, useRef } from 'react';
 import styles from './QuestionsContainer.scss';
 import { Route, Switch, useHistory } from 'react-router-dom';
 import Spinner from '../UI/Spinner/Spinner';
-import QuestionEdit from './QuestionEdit/QuestionEdit';
 import Sidebar from '../Sidebar/Sidebar';
 
 const QuestionsCollection = lazy(() =>
   import('./QuestionsCollection/QuestionsCollection')
 );
 const QuestionBuilder = lazy(() => import('./QuestionBuilder/QuestionBuilder'));
+
+const QuestionEdit = lazy(() => import('./QuestionEdit/QuestionEdit'));
 
 const QuestionsContainer = () => {
   const searchInputRef = useRef();
@@ -57,9 +58,9 @@ const QuestionsContainer = () => {
           path="/questions/:question/edit"
           render={() => <h3>Editar Questão</h3>}
         />
-        <Route path="/questions/bookmarked" render={() => <h3>Favoritos</h3>} />
+        <Route path="/questions/bookmarks" render={() => <h3>Favoritos</h3>} />
         <Route
-          path="/questions/answered"
+          path="/questions/answers"
           render={() => <h3>Questões Respondidas</h3>}
         />
         <Route path="/questions/create" render={() => <h3>Nova Questão</h3>} />

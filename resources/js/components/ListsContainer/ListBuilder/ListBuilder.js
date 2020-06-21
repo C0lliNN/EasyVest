@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { useState, useEffect, useReducer, useContext } from 'react';
 import Select from '@bit/mui-org.material-ui.select';
 import MenuItem from '@bit/mui-org.material-ui.menu-item';
@@ -42,7 +43,7 @@ const paginationReducer = (state = initialState, action) => {
   }
 };
 
-const ListBuilder = () => {
+const ListBuilder = ({ list }) => {
   const searchFromOptions = [
     {
       key: 'all',
@@ -67,10 +68,10 @@ const ListBuilder = () => {
   ];
 
   const [availableSubjects, setAvailableSubjects] = useState([]);
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [listSubject, setListSubject] = useState(1);
-  const [listTags, setListTags] = useState([]);
+  const [title, setTitle] = useState(list ? list.title : '');
+  const [description, setDescription] = useState(list ? list.description : '');
+  const [listSubject, setListSubject] = useState(list ? list.subject.id : 1);
+  const [listTags, setListTags] = useState(list ? list.tags.split(', ') : []);
 
   const [searchFrom, setSearchFrom] = useState('all');
   const [questionSubject, setQuestionSubject] = useState(1);
@@ -78,7 +79,9 @@ const ListBuilder = () => {
   const [statement, setStatement] = useState('');
 
   const [filteredQuestions, setFilteredQuestions] = useState([]);
-  const [addedQuestions, setAddedQuestions] = useState([]);
+  const [addedQuestions, setAddedQuestions] = useState(
+    list ? list.questions : []
+  );
 
   const setIsLoading = useContext(context).changeFixedSpinnerState;
 
@@ -269,13 +272,23 @@ const ListBuilder = () => {
 
       setIsLoading(true);
 
-      Axios.post('/lists', payload)
+      let request = null;
+
+      if (list) {
+        request = Axios.put(`/lists/${list.id}`, payload);
+      } else {
+        request = Axios.post('/lists', payload);
+      }
+
+      request
         .then((response) => {
           if (response.status === 200) {
+            const operation = list ? 'atualizada' : 'criada';
+
             setupModal(
               'Sucesso!',
               'green-text',
-              "Sua lista foi criada com sucesso e já está disponível em 'Minhas Listas'"
+              `Sua lista foi ${operation} com sucesso e já está disponível em 'Minhas Listas'`
             );
             modalInstance.open();
           }
@@ -487,12 +500,25 @@ const ListBuilder = () => {
             onClick={handleCreateList}
             className={`btn ${styles.CreateButton} z-depth-0`}
           >
-            Criar
+            {list ? 'Salvar' : 'Criar'}
           </button>
         </div>
       )}
     </div>
   );
+};
+
+ListBuilder.propTypes = {
+  list: PropTypes.shape({
+    description: PropTypes.string,
+    id: PropTypes.any,
+    questions: PropTypes.array,
+    subject: PropTypes.shape({
+      id: PropTypes.number,
+    }),
+    tags: PropTypes.string,
+    title: PropTypes.string,
+  }),
 };
 
 export default ListBuilder;

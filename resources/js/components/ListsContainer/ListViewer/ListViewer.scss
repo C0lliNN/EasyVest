@@ -3,6 +3,7 @@
 
 .ListViewer {
   @include mixins.block;
+  margin-bottom: 30px;
 
   h3 {
     text-align: center;

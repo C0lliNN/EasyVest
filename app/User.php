@@ -57,11 +57,29 @@ class User extends Authenticatable {
         );
     }
 
+    public function bookmarkedLists() {
+        return $this->belongsToMany(
+            QuestionList::class,
+            'list_user',
+            'user_id',
+            'list_id'
+        )->wherePivot('relation', 'bookmark');
+    }
+
     public function answeredQuestions() {
         return $this->belongsToMany(Question::class)->wherePivot(
             'relation',
             'answer'
         );
+    }
+
+    public function answeredLists() {
+        return $this->belongsToMany(
+            QuestionList::class,
+            'list_user',
+            'user_id',
+            'list_id'
+        )->wherePivot('relation', 'answer');
     }
 
     public function deleteProfilePicture() {

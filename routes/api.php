@@ -21,16 +21,19 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth:api'])->group(function () {
     Route::get('/subjects', 'API\SubjectsController@index');
     Route::get('/questions/bookmarks', 'API\QuestionsController@getBookmarks');
+    Route::get('/lists/bookmarks', 'API\ListsController@bookmarks');
     Route::get('/questions/answers', 'API\QuestionsController@answers');
+    Route::get('/lists/answers', 'API\ListsController@answers');
     Route::apiResource('/questions', 'API\QuestionsController');
     Route::apiResource('/lists', 'API\ListsController');
     Route::post(
         '/questions/{question}/bookmark',
         'API\QuestionsController@bookmarkQuestion'
     );
+    Route::post('/lists/{list}/bookmark', 'API\ListsController@bookmark');
     Route::delete(
-        '/questions/{question}/unbookmark',
-        'API\QuestionsController@unbookmarkQuestion'
+        '/lists/{lists}/unbookmark',
+        'API\ListsController@unbookmark'
     );
     Route::post(
         '/questions/{question}/answer',
