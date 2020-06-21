@@ -30,11 +30,12 @@ Route::middleware(['auth:api'])->group(function () {
         '/questions/{question}/bookmark',
         'API\QuestionsController@bookmarkQuestion'
     );
-    Route::post('/lists/{list}/bookmark', 'API\ListsController@bookmark');
     Route::delete(
-        '/lists/{lists}/unbookmark',
-        'API\ListsController@unbookmark'
+        '/questions/{question}/unbookmark',
+        'API\QuestionsController@unbookmarkQuestion'
     );
+    Route::post('/lists/{list}/bookmark', 'API\ListsController@bookmark');
+    Route::delete('/lists/{list}/unbookmark', 'API\ListsController@unbookmark');
     Route::post(
         '/questions/{question}/answer',
         'API\QuestionsController@createAnswer'

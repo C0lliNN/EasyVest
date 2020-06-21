@@ -119,6 +119,7 @@ class QuestionsController extends Controller {
         if ($question->owner()->firstOrFail()->id === Auth::id()) {
             $user = User::findOrFail(Auth::id());
             $user->myQuestions()->detach($question->id);
+            $question->lists()->detach();
             $question->delete();
             return response(200);
         }

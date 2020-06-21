@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.scss":
-/*!*****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.scss ***!
-  \*****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/ListsContainer/ListBuilder/ListBuilder.scss":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--11-1!./node_modules/postcss-loader/src??ref--11-2!./node_modules/sass-loader/dist/cjs.js??ref--11-3!./resources/js/components/ListsContainer/ListBuilder/ListBuilder.scss ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12,71 +12,25 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".QuestionBuilder__QuestionBuilder___HLpKN p.QuestionBuilder__Label___ljm5g {\n  font-size: 1.1em;\n  font-weight: 600;\n}\n.QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__Select___Hvq7Z {\n  display: block;\n  width: 100%;\n}\n.QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__Select___Hvq7Z div {\n  padding: 10px 0;\n}\n.QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__Select___Hvq7Z::before {\n  border-bottom-color: #bbb;\n}\n.QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__Select___Hvq7Z:hover::before, .QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__Select___Hvq7Z:active::before, .QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__Select___Hvq7Z:focus::before, .QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__Select___Hvq7Z::after {\n  border-bottom-color: #008aff !important;\n}\n.QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__CreateButton___3gl46 {\n  background-color: #38c172 !important;\n  text-transform: none;\n  font-weight: 500;\n  border-radius: 5px;\n  display: block;\n  width: 100%;\n  margin: 10px auto 3px auto;\n  font-size: 1.4em;\n}\n.QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__CreateButton___3gl46:hover, .QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__CreateButton___3gl46:active, .QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__CreateButton___3gl46:focus {\n  background-color: #35b56b !important;\n}\n.QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__ClearButton___AVDVh {\n  background-color: #f6993f !important;\n  text-transform: none;\n  font-weight: 500;\n  border-radius: 5px;\n  display: block;\n  width: 100%;\n  font-size: 1.4em;\n}\n.QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__ClearButton___AVDVh:hover, .QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__ClearButton___AVDVh:active, .QuestionBuilder__QuestionBuilder___HLpKN .QuestionBuilder__ClearButton___AVDVh:focus {\n  background-color: #f59130 !important;\n}", ""]);
+exports.push([module.i, ".ListBuilder__ListBuilder___1mVOh .ListBuilder__FormGroup___sxiyW {\n  margin: 10px auto;\n}\n.ListBuilder__ListBuilder___1mVOh label {\n  display: block;\n  width: 100%;\n  font-size: 1.1em;\n  color: #404040 !important;\n  margin-bottom: 10px;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Select___2Z8am,\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46 {\n  display: block;\n  width: 100%;\n}\n.ListBuilder__ListBuilder___1mVOh h4 {\n  text-align: center;\n  font-size: 1.4em;\n  font-weight: 600;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Select___2Z8am div {\n  padding: 10px 0;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Select___2Z8am::before {\n  border-bottom-color: #bbb;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Select___2Z8am:hover::before, .ListBuilder__ListBuilder___1mVOh .ListBuilder__Select___2Z8am:active::before, .ListBuilder__ListBuilder___1mVOh .ListBuilder__Select___2Z8am:focus::before, .ListBuilder__ListBuilder___1mVOh .ListBuilder__Select___2Z8am::after {\n  border-bottom-color: #008aff !important;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46 {\n  border-color: #bbb !important;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46:focus, .ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46:active {\n  border-bottom: 1px solid #008aff !important;\n  box-shadow: 0 1px 0 0 #008aff !important;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46::-webkit-input-placeholder {\n  color: rgba(103, 103, 103, 0.7);\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46::-moz-placeholder {\n  color: rgba(103, 103, 103, 0.7);\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46:-ms-input-placeholder {\n  color: rgba(103, 103, 103, 0.7);\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46::-ms-input-placeholder {\n  color: rgba(103, 103, 103, 0.7);\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Input___2Sx46::placeholder {\n  color: rgba(103, 103, 103, 0.7);\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__QuestionItem___3mk1B {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__Total___1_OMY {\n  color: #676767;\n  font-size: 0.9em;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__IconButton___2AROl {\n  border: none;\n  background-color: transparent;\n  border-radius: 100%;\n  cursor: pointer;\n  height: 22px;\n  width: 22px;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__IconButton___2AROl:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__IconButton___2AROl:hover {\n  background-color: transparent !important;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__CreateButton___S92ed {\n  background-color: #38c172 !important;\n  text-transform: none;\n  font-weight: 500;\n  border-radius: 5px;\n  display: block;\n  width: 100%;\n  font-size: 1.4em;\n}\n.ListBuilder__ListBuilder___1mVOh .ListBuilder__CreateButton___S92ed:hover, .ListBuilder__ListBuilder___1mVOh .ListBuilder__CreateButton___S92ed:active, .ListBuilder__ListBuilder___1mVOh .ListBuilder__CreateButton___S92ed:focus {\n  background-color: #35b56b !important;\n}", ""]);
 
 // exports
 exports.locals = {
-	"QuestionBuilder": "QuestionBuilder__QuestionBuilder___HLpKN",
-	"Label": "QuestionBuilder__Label___ljm5g",
-	"Select": "QuestionBuilder__Select___Hvq7Z",
-	"CreateButton": "QuestionBuilder__CreateButton___3gl46",
-	"ClearButton": "QuestionBuilder__ClearButton___AVDVh"
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/QuestionsContainer.scss":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/QuestionsContainer/QuestionsContainer.scss ***!
-  \****************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".QuestionsContainer__QuestionsContainer___3NDcb {\n  background-color: #f9f9f9;\n  padding: 0px 20px;\n  margin-top: 20px;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n}\n.QuestionsContainer__QuestionsContainer___3NDcb h3 {\n  color: #152c5b !important;\n  font-size: 1.8em;\n  font-weight: bold;\n  text-align: center;\n}\n.QuestionsContainer__QuestionsContainer___3NDcb .QuestionsContainer__Container___2g07r {\n  padding-top: 5px;\n  padding-bottom: 20px;\n  padding-left: 25px;\n  padding-right: 25px;\n  box-sizing: border-box;\n}\n\narticle.QuestionsContainer__question___1NLRP {\n  padding: 20px auto;\n}", ""]);
-
-// exports
-exports.locals = {
-	"QuestionsContainer": "QuestionsContainer__QuestionsContainer___3NDcb",
-	"Container": "QuestionsContainer__Container___2g07r",
-	"question": "QuestionsContainer__question___1NLRP"
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Sidebar/Sidebar.scss":
-/*!******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/Sidebar/Sidebar.scss ***!
-  \******************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".Sidebar__Sidebar___3kZ2W a.Sidebar__Option___1wvvY {\n  color: #008aff;\n}\n.Sidebar__Sidebar___3kZ2W a.Sidebar__Option___1wvvY:hover {\n  background-color: #f2f2f2 !important;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__Option___1wvvY.Sidebar__Active___37ccC {\n  background-color: #008aff !important;\n  color: white;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__Option___1wvvY.Sidebar__Active___37ccC:hover {\n  background-color: #008aff !important;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__Option___1wvvY.Sidebar__Active___37ccC span {\n  color: #eafaf9 !important;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q {\n  display: flex;\n  align-items: center;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q input {\n  margin-right: 20px;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q input::-webkit-input-placeholder {\n  color: rgba(0, 0, 0, 0.6);\n  font-size: 1.1em;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q input::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.6);\n  font-size: 1.1em;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q input:-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.6);\n  font-size: 1.1em;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q input::-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.6);\n  font-size: 1.1em;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q input::placeholder {\n  color: rgba(0, 0, 0, 0.6);\n  font-size: 1.1em;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q input:focus {\n  border-bottom-color: #008aff !important;\n  box-shadow: 0 1px 0 0 #008aff !important;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchBox___1W64Q i {\n  font-size: 1.8em !important;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchButton___1Z2xi {\n  background-color: #008aff;\n  border-radius: 5px;\n  text-transform: none;\n  color: #f8fafc !important;\n  display: default;\n  padding: default;\n  margin-left: default !important;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__SearchButton___1Z2xi:hover, .Sidebar__Sidebar___3kZ2W .Sidebar__SearchButton___1Z2xi:active, .Sidebar__Sidebar___3kZ2W .Sidebar__SearchButton___1Z2xi:focus {\n  background-color: #007ce6 !important;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__CreateButton___2kN2I {\n  background-color: #38c172 !important;\n  text-transform: none;\n  font-weight: 500;\n  border-radius: 5px;\n  display: block;\n  width: 100%;\n  font-size: 1.2em;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__CreateButton___2kN2I:hover, .Sidebar__Sidebar___3kZ2W .Sidebar__CreateButton___2kN2I:active, .Sidebar__Sidebar___3kZ2W .Sidebar__CreateButton___2kN2I:focus {\n  background-color: #35b56b !important;\n}\n.Sidebar__Sidebar___3kZ2W .Sidebar__CreateButton___2kN2I:hover {\n  color: white;\n}", ""]);
-
-// exports
-exports.locals = {
-	"Sidebar": "Sidebar__Sidebar___3kZ2W",
-	"Option": "Sidebar__Option___1wvvY",
-	"Active": "Sidebar__Active___37ccC",
-	"SearchBox": "Sidebar__SearchBox___1W64Q",
-	"SearchButton": "Sidebar__SearchButton___1Z2xi",
-	"CreateButton": "Sidebar__CreateButton___2kN2I"
+	"ListBuilder": "ListBuilder__ListBuilder___1mVOh",
+	"FormGroup": "ListBuilder__FormGroup___sxiyW",
+	"Select": "ListBuilder__Select___2Z8am",
+	"Input": "ListBuilder__Input___2Sx46",
+	"QuestionItem": "ListBuilder__QuestionItem___3mk1B",
+	"Total": "ListBuilder__Total___1_OMY",
+	"IconButton": "ListBuilder__IconButton___2AROl",
+	"CreateButton": "ListBuilder__CreateButton___S92ed"
 };
 
 /***/ }),
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/InputTag/InputTag.scss":
 /*!***********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/UI/InputTag/InputTag.scss ***!
+  !*** ./node_modules/css-loader??ref--11-1!./node_modules/postcss-loader/src??ref--11-2!./node_modules/sass-loader/dist/cjs.js??ref--11-3!./resources/js/components/UI/InputTag/InputTag.scss ***!
   \***********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -98,10 +52,32 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.js":
-/*!***************************************************************************************!*\
-  !*** ./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.js ***!
-  \***************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/Paginator/Paginator.scss":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--11-1!./node_modules/postcss-loader/src??ref--11-2!./node_modules/sass-loader/dist/cjs.js??ref--11-3!./resources/js/components/UI/Paginator/Paginator.scss ***!
+  \*************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".Paginator__Paginator___3EsAn {\n  text-align: center;\n}\n.Paginator__Paginator___3EsAn button {\n  width: 30px;\n  height: 30px;\n  cursor: pointer;\n  margin-right: 2px;\n  border-radius: 100%;\n  background-color: transparent;\n  border: 1px solid #008aff;\n  color: #008aff;\n  outline: none;\n  font-size: 1.1em;\n}\n.Paginator__Paginator___3EsAn button:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.Paginator__Paginator___3EsAn button:focus, .Paginator__Paginator___3EsAn button:active {\n  background-color: #008aff;\n  color: white;\n}\n.Paginator__Paginator___3EsAn button.Paginator__Active___2cMUW {\n  background-color: #008aff;\n  color: white;\n}", ""]);
+
+// exports
+exports.locals = {
+	"Paginator": "Paginator__Paginator___3EsAn",
+	"Active": "Paginator__Active___2cMUW"
+};
+
+/***/ }),
+
+/***/ "./resources/js/components/ListsContainer/ListBuilder/ListBuilder.js":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/ListsContainer/ListBuilder/ListBuilder.js ***!
+  \***************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -111,19 +87,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../context */ "./resources/js/context.js");
-/* harmony import */ var _UI_MyCKEditor_MyCKEditor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../UI/MyCKEditor/MyCKEditor */ "./resources/js/components/UI/MyCKEditor/MyCKEditor.js");
-/* harmony import */ var _UI_InputTag_InputTag__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../UI/InputTag/InputTag */ "./resources/js/components/UI/InputTag/InputTag.js");
+/* harmony import */ var _bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bit/mui-org.material-ui.select */ "./node_modules/@bit/mui-org.material-ui.select/dist/Select/index.js");
+/* harmony import */ var _bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bit/mui-org.material-ui.menu-item */ "./node_modules/@bit/mui-org.material-ui.menu-item/dist/MenuItem/index.js");
+/* harmony import */ var _bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ListBuilder.scss */ "./resources/js/components/ListsContainer/ListBuilder/ListBuilder.scss");
+/* harmony import */ var _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _UI_ErrorMessage_ErrorMessage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../UI/ErrorMessage/ErrorMessage */ "./resources/js/components/UI/ErrorMessage/ErrorMessage.js");
-/* harmony import */ var _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./QuestionBuilder.scss */ "./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.scss");
-/* harmony import */ var _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _utility__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../utility */ "./resources/js/utility.js");
-/* harmony import */ var _bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @bit/mui-org.material-ui.select */ "./node_modules/@bit/mui-org.material-ui.select/dist/Select/index.js");
-/* harmony import */ var _bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @bit/mui-org.material-ui.menu-item */ "./node_modules/@bit/mui-org.material-ui.menu-item/dist/MenuItem/index.js");
-/* harmony import */ var _bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _utility__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../utility */ "./resources/js/utility.js");
+/* harmony import */ var _UI_InputTag_InputTag__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../UI/InputTag/InputTag */ "./resources/js/components/UI/InputTag/InputTag.js");
+/* harmony import */ var _UI_Paginator_Paginator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../UI/Paginator/Paginator */ "./resources/js/components/UI/Paginator/Paginator.js");
+/* harmony import */ var _UI_ErrorMessage_ErrorMessage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../UI/ErrorMessage/ErrorMessage */ "./resources/js/components/UI/ErrorMessage/ErrorMessage.js");
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../context */ "./resources/js/context.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -136,6 +112,11 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -148,322 +129,532 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var QuestionBuilder = function QuestionBuilder(props) {
-  var question = props.question;
-  var setIsLoading = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_2__["default"]).changeFixedSpinnerState;
+var initialState = {
+  currentPage: 1,
+  lastPage: 1,
+  total: 1
+};
+var SETUP_PAGINATION = 'SETUP_PAGINATION';
+var CHANGE_PAGE = 'CHANGE_PAGE';
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
+var paginationReducer = function paginationReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case SETUP_PAGINATION:
+      {
+        return _objectSpread(_objectSpread({}, state), {}, {
+          currentPage: action.currentPage,
+          total: action.total,
+          lastPage: action.lastPage
+        });
+      }
+
+    case CHANGE_PAGE:
+      {
+        return _objectSpread(_objectSpread({}, state), {}, {
+          currentPage: action.currentPage,
+          total: action.total,
+          lastPage: action.lastPage
+        });
+      }
+
+    default:
+      return state;
+  }
+};
+
+var ListBuilder = function ListBuilder(_ref) {
+  var list = _ref.list;
+  var searchFromOptions = [{
+    key: 'all',
+    value: 'all',
+    text: 'Todos'
+  }, {
+    key: 'my-questions',
+    value: 'my-questions',
+    text: 'Minhas Questões'
+  }, {
+    key: 'favorite',
+    value: 'favorite',
+    text: 'Favoritos'
+  }, {
+    key: 'answers',
+    value: 'answers',
+    text: 'Questões Respondidas'
+  }];
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
-      error = _useState2[0],
-      setError = _useState2[1];
+      availableSubjects = _useState2[0],
+      setAvailableSubjects = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.content : null),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(list ? list.title : ''),
       _useState4 = _slicedToArray(_useState3, 2),
-      content = _useState4[0],
-      setContent = _useState4[1];
+      title = _useState4[0],
+      setTitle = _useState4[1];
 
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.alternativeA : null),
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(list ? list.description : ''),
       _useState6 = _slicedToArray(_useState5, 2),
-      alternativeA = _useState6[0],
-      setAlternativeA = _useState6[1];
+      description = _useState6[0],
+      setDescription = _useState6[1];
 
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.alternativeB : null),
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(list ? list.subject.id : 1),
       _useState8 = _slicedToArray(_useState7, 2),
-      alternativeB = _useState8[0],
-      setAlternativeB = _useState8[1];
+      listSubject = _useState8[0],
+      setListSubject = _useState8[1];
 
-  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.alternativeC : null),
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(list ? list.tags.split(', ') : []),
       _useState10 = _slicedToArray(_useState9, 2),
-      alternativeC = _useState10[0],
-      setAlternativeC = _useState10[1];
+      listTags = _useState10[0],
+      setListTags = _useState10[1];
 
-  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.alternativeD : null),
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('all'),
       _useState12 = _slicedToArray(_useState11, 2),
-      alternativeD = _useState12[0],
-      setAlternativeD = _useState12[1];
+      searchFrom = _useState12[0],
+      setSearchFrom = _useState12[1];
 
-  var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.alternativeE : null),
+  var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(1),
       _useState14 = _slicedToArray(_useState13, 2),
-      alternativeE = _useState14[0],
-      setAlternativeE = _useState14[1];
+      questionSubject = _useState14[0],
+      setQuestionSubject = _useState14[1];
 
-  var _useState15 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.correctAlternative : 'a'),
+  var _useState15 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
       _useState16 = _slicedToArray(_useState15, 2),
-      correctAlternative = _useState16[0],
-      setCorrectAlternative = _useState16[1];
+      questionTag = _useState16[0],
+      setQuestionTag = _useState16[1];
 
-  var _useState17 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.subject.id : 1),
+  var _useState17 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
       _useState18 = _slicedToArray(_useState17, 2),
-      subject = _useState18[0],
-      setSubject = _useState18[1];
+      statement = _useState18[0],
+      setStatement = _useState18[1];
 
   var _useState19 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
       _useState20 = _slicedToArray(_useState19, 2),
-      availableSubjects = _useState20[0],
-      setAvailableSubjects = _useState20[1];
+      filteredQuestions = _useState20[0],
+      setFilteredQuestions = _useState20[1];
 
-  var _useState21 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(question ? question.tags.split(',').map(function (tag) {
-    return tag.trim();
-  }) : []),
+  var _useState21 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(list ? list.questions : []),
       _useState22 = _slicedToArray(_useState21, 2),
-      tags = _useState22[0],
-      setTags = _useState22[1];
+      addedQuestions = _useState22[0],
+      setAddedQuestions = _useState22[1];
+
+  var setIsLoading = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_10__["default"]).changeFixedSpinnerState;
+
+  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])(paginationReducer, initialState),
+      _useReducer2 = _slicedToArray(_useReducer, 2),
+      paginationState = _useReducer2[0],
+      dispatch = _useReducer2[1];
 
   var _useState23 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
       _useState24 = _slicedToArray(_useState23, 2),
       modalInstance = _useState24[0],
       setModalInstance = _useState24[1];
 
+  var _useState25 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      _useState26 = _slicedToArray(_useState25, 2),
+      error = _useState26[0],
+      setError = _useState26[1];
+
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     setIsLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get('/subjects').then(function (response) {
-      setAvailableSubjects(response.data.data);
+    var subjectsRequest = axios__WEBPACK_IMPORTED_MODULE_5___default.a.get('/subjects');
+    var questionsRequest = axios__WEBPACK_IMPORTED_MODULE_5___default.a.get('/questions?listBuilder=true&searchFrom=all&subject=1');
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.all([subjectsRequest, questionsRequest]).then(axios__WEBPACK_IMPORTED_MODULE_5___default.a.spread(function () {
+      var subjectResponse = arguments.length <= 0 ? undefined : arguments[0];
+      var questionsResponse = arguments.length <= 1 ? undefined : arguments[1];
+
+      if (subjectResponse.status === 200) {
+        var subjects = subjectResponse.data.data;
+        setAvailableSubjects(subjects.map(function (subject) {
+          return {
+            key: subject.id,
+            value: subject.id,
+            text: subject.name
+          };
+        }));
+      }
+
+      if (questionsResponse.status === 200) {
+        dispatch({
+          type: SETUP_PAGINATION,
+          currentPage: questionsResponse.data.meta.current_page,
+          total: questionsResponse.data.meta.total,
+          lastPage: questionsResponse.data.meta.last_page
+        });
+        setFilteredQuestions(questionsResponse.data.data);
+      }
+
+      Object(_utility__WEBPACK_IMPORTED_MODULE_6__["setupTooltips"])();
       var modal = document.querySelector('#modal'); // eslint-disable-next-line
 
       var instance = M.Modal.init(modal, {});
       setModalInstance(instance);
-    })["catch"](function (error) {
+    }))["catch"](function (error) {
+      console.error(error);
       setError(error);
     })["finally"](function () {
       setIsLoading(false);
     });
   }, [axios__WEBPACK_IMPORTED_MODULE_5___default.a]);
 
-  var createQuestionHandler = function createQuestionHandler() {
-    var auxDiv = document.createElement('div');
+  var handleInfoInputs = function handleInfoInputs(event, setProperty) {
+    setProperty(event.target.value);
+  };
+
+  var handleInputChange = function handleInputChange(event, setProperty) {
+    setProperty(event.target.value);
+    var url = '/questions?listBuilder=true';
+
+    if (setProperty === setSearchFrom) {
+      url += "&searchFrom=".concat(event.target.value);
+    } else {
+      url += "&searchFrom=".concat(searchFrom);
+    }
+
+    if (setProperty === setQuestionSubject) {
+      url += "&subject=".concat(event.target.value);
+    } else {
+      url += "&subject=".concat(questionSubject);
+    }
+
+    if (questionTag.trim()) {
+      if (setProperty === setQuestionTag) {
+        url += "&tag=".concat(event.target.value);
+      } else {
+        url += "&tag=".concat(questionTag);
+      }
+    }
+
+    if (statement.trim()) {
+      if (setProperty === setStatement) {
+        url += "&statement=".concat(event.target.value);
+      } else {
+        url += "&statement=".concat(statement);
+      }
+    }
+
+    if (setProperty === setSearchFrom || setProperty === setQuestionSubject || setProperty === setQuestionTag || setProperty === setStatement) {
+      updateFilteredQuestions(url);
+    }
+  };
+
+  var updateFilteredQuestions = function updateFilteredQuestions(url) {
+    setIsLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get(url).then(function (response) {
+      if (response.status === 200) {
+        setFilteredQuestions(response.data.data);
+      }
+
+      dispatch({
+        type: SETUP_PAGINATION,
+        currentPage: response.data.meta.current_page,
+        total: response.data.meta.total,
+        lastPage: response.data.meta.last_page
+      });
+    })["catch"](function (error) {
+      console.error(error);
+      setError(error);
+    })["finally"](function () {
+      setIsLoading(false);
+    });
+  };
+
+  var handleAddQuestionToList = function handleAddQuestionToList(question) {
+    setAddedQuestions(function (prevState) {
+      return prevState.concat(_objectSpread({}, question));
+    });
+  };
+
+  var handleRemoveQuestionFromList = function handleRemoveQuestionFromList(question) {
+    setAddedQuestions(function (prevState) {
+      return prevState.filter(function (addedQuestion) {
+        return addedQuestion.id !== question.id;
+      });
+    });
+  };
+
+  var handleChangePage = function handleChangePage(page) {
+    var url = "/questions?listBuilder=true&searchFrom=".concat(searchFrom, "&subject=").concat(questionSubject, "&tag=").concat(questionTag, "&statement=").concat(statement, "&page=").concat(page);
+    updateFilteredQuestions(url);
+  };
+
+  var handleCreateList = function handleCreateList() {
     var errorFounded = false;
-    var errorMessage = null;
-    auxDiv.innerHTML = content;
+    var errorMessage = '';
 
-    if (!content || !auxDiv.innerText.trim()) {
+    if (!title.trim()) {
       errorFounded = true;
-      errorMessage = "O campo 'Conteúdo' precisa ser preenchido";
+      errorMessage = "O Campo 'Título' Precisa ser preenchido";
     }
 
-    auxDiv.innerHTML = alternativeA;
-
-    if (!errorFounded && (!alternativeA || !auxDiv.innerText.trim())) {
+    if (!errorFounded && !description.trim()) {
       errorFounded = true;
-      errorMessage = "O campo 'Alternativa A' precisa ser preenchido";
+      errorMessage = "O Campo 'Descrição' Precisa ser preenchido";
     }
 
-    auxDiv.innerHTML = alternativeB;
-
-    if (!errorFounded && (!alternativeB || !auxDiv.innerText.trim())) {
+    if (!errorFounded && !listTags.length) {
       errorFounded = true;
-      errorMessage = "O campo 'Alternativa B' precisa ser preenchido";
+      errorMessage = 'Ao menos uma tag precisa ser adicionada à lista';
     }
 
-    auxDiv.innerHTML = alternativeC;
-
-    if (!errorFounded && (!alternativeC || !auxDiv.innerText.trim())) {
+    if (!errorFounded && addedQuestions.length < 2) {
       errorFounded = true;
-      errorMessage = "O campo 'Alternativa C' precisa ser preenchido";
-    }
-
-    auxDiv.innerHTML = alternativeD;
-
-    if (!errorFounded && (!alternativeD || !auxDiv.innerText.trim())) {
-      errorFounded = true;
-      errorMessage = "O campo 'Alternativa D' precisa ser preenchido";
-    }
-
-    if (!errorFounded && !correctAlternative) {
-      errorFounded = true;
-      errorMessage = 'Uma alternativa correta precisa ser selecionada';
-    }
-
-    if (!errorFounded && !subject) {
-      errorFounded = true;
-      errorMessage = 'Uma matéria precisa ser selecionada';
-    }
-
-    auxDiv.innerHTML = alternativeE;
-
-    if (!errorFounded && (!alternativeE || !auxDiv.innerText.trim()) && correctAlternative === 'E') {
-      errorFounded = true;
-      errorMessage = "A alternativa correta não pode ser 'E' pois esta não está preenchida";
+      errorMessage = 'Pelo menos duas questões precisam ser adicionadas';
     }
 
     if (errorFounded) {
-      Object(_utility__WEBPACK_IMPORTED_MODULE_8__["setupModal"])('Erro no formulário', 'red-text', errorMessage);
+      Object(_utility__WEBPACK_IMPORTED_MODULE_6__["setupModal"])('Erro no Formulário', 'red-text', errorMessage);
       modalInstance.open();
     } else {
-      var data = {
-        content: content,
-        alternativeA: alternativeA,
-        alternativeB: alternativeB,
-        alternativeC: alternativeC,
-        alternativeD: alternativeD,
-        alternativeE: alternativeE,
-        correctAlternative: correctAlternative,
-        subject: subject,
-        tags: tags
+      var payload = {
+        title: title,
+        description: description,
+        tags: listTags.join(', '),
+        subject: listSubject,
+        questions: addedQuestions.map(function (question) {
+          return question.id;
+        })
       };
       setIsLoading(true);
       var request = null;
 
-      if (question) {
-        request = axios__WEBPACK_IMPORTED_MODULE_5___default.a.put("/questions/".concat(question.id), data);
+      if (list) {
+        request = axios__WEBPACK_IMPORTED_MODULE_5___default.a.put("/lists/".concat(list.id), payload);
       } else {
-        request = axios__WEBPACK_IMPORTED_MODULE_5___default.a.post('/questions', data);
+        request = axios__WEBPACK_IMPORTED_MODULE_5___default.a.post('/lists', payload);
       }
 
       request.then(function (response) {
         if (response.status === 200) {
-          var operation = question ? 'atualizada' : 'criada';
-          Object(_utility__WEBPACK_IMPORTED_MODULE_8__["setupModal"])("Quest\xE3o ".concat(operation, " com Sucesso!"), 'green-text', "Sua quest\xE3o foi ".concat(operation, " e j\xE1 est\xE1 dispon\xEDvel na sess\xE3o 'Minhas Quest\xF5es'"));
+          var operation = list ? 'atualizada' : 'criada';
+          Object(_utility__WEBPACK_IMPORTED_MODULE_6__["setupModal"])('Sucesso!', 'green-text', "Sua lista foi ".concat(operation, " com sucesso e j\xE1 est\xE1 dispon\xEDvel em 'Minhas Listas'"));
           modalInstance.open();
         }
       })["catch"](function (error) {
-        setError(error);
         console.error(error);
+        Object(_utility__WEBPACK_IMPORTED_MODULE_6__["setupModal"])('Sucesso!', 'red-text', 'Algo inesperado aconteceu e sua lista não pode ser criada. Tente novamente mais tarde');
+        setError(error);
       })["finally"](function () {
         setIsLoading(false);
       });
     }
   };
 
-  var clearFormHandler = function clearFormHandler() {
-    setContent('');
-    setAlternativeA('');
-    setAlternativeB('');
-    setAlternativeC('');
-    setAlternativeD('');
-    setAlternativeE('');
-    setCorrectAlternative('a');
-    setSubject(1);
-    setTags([]);
-  };
+  var filteredQuestionsContent = null;
 
-  var uiContent = null;
-
-  if (error) {
-    uiContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_ErrorMessage_ErrorMessage__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      message: error.message
+  if (filteredQuestions.length) {
+    filteredQuestionsContent = filteredQuestions.filter(function (question) {
+      return addedQuestions.findIndex(function (addedQuestion) {
+        return addedQuestion.id === question.id;
+      }) < 0;
+    }).map(function (question) {
+      var auxDiv = document.createElement('div');
+      auxDiv.innerHTML = question.content;
+      var questionContent = auxDiv.innerText;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        key: question.id,
+        className: "collection-item ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.QuestionItem)
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "/questions/".concat(question.id),
+        target: "_blank",
+        rel: "noreferrer",
+        className: "truncate"
+      }, questionContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "secondary-content green-text tooltipped ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.IconButton),
+        onClick: function onClick() {
+          return handleAddQuestionToList(question);
+        },
+        "data-position": "bottom",
+        "data-tooltip": "Adicionar Quest\xE3o \xE0 Lista"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "material-icons"
+      }, "add_box")));
     });
   } else {
-    uiContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "content"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Label
-    }, "Conte\xFAdo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_MyCKEditor_MyCKEditor__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      content: content,
-      setData: setContent
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "alternative"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Label
-    }, "Alternativa A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_MyCKEditor_MyCKEditor__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      content: alternativeA,
-      setData: setAlternativeA
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "alternative"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Label
-    }, "Alternativa B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_MyCKEditor_MyCKEditor__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      content: alternativeB,
-      setData: setAlternativeB
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "alternative"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Label
-    }, "Alternativa C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_MyCKEditor_MyCKEditor__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      content: alternativeC,
-      setData: setAlternativeC
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "alternative"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Label
-    }, "Alternativa D"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_MyCKEditor_MyCKEditor__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      content: alternativeD,
-      setData: setAlternativeD
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "alternative"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Label
-    }, "Alternativa E (Opcional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_MyCKEditor_MyCKEditor__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      content: alternativeE,
-      setData: setAlternativeE
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Label
-    }, "Alternativa Correta"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_9___default.a, {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Select,
-      value: correctAlternative,
-      onChange: function onChange(event) {
-        return setCorrectAlternative(event.target.value);
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10___default.a, {
-      value: "a"
-    }, "A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10___default.a, {
-      value: "b"
-    }, "B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10___default.a, {
-      value: "c"
-    }, "C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10___default.a, {
-      value: "d"
-    }, "D"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10___default.a, {
-      value: "e"
-    }, "E"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Label
-    }, "Mat\xE9ria"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_9___default.a, {
-      className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.Select,
-      value: subject,
-      onChange: function onChange(event) {
-        return setSubject(event.target.value);
-      }
-    }, availableSubjects.map(function (subject) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        key: subject.id,
-        value: subject.id
-      }, subject.name);
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: "label"
-    }, "Tags"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_InputTag_InputTag__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      tags: tags,
-      setTags: setTags
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-      className: "btn ".concat(_QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.CreateButton, " z-depth-0"),
-      onClick: createQuestionHandler
-    }, question ? 'Salvar' : 'Criar'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "btn ".concat(_QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.ClearButton, " z-depth-0"),
-      onClick: clearFormHandler
-    }, "Limpar"));
+    filteredQuestionsContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+      className: "collection-item"
+    }, "Nenhuma quest\xE3o foi encontrada");
+  }
+
+  var addedQuestionsContent = null;
+
+  if (addedQuestions.length) {
+    addedQuestionsContent = addedQuestions.map(function (question) {
+      var auxDiv = document.createElement('div');
+      auxDiv.innerHTML = question.content;
+      var questionContent = auxDiv.innerText;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        key: question.id,
+        className: "collection-item ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.QuestionItem)
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "/questions/".concat(question.id),
+        className: "truncate"
+      }, questionContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "secondary-content red-text tooltipped ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.IconButton),
+        onClick: function onClick() {
+          return handleRemoveQuestionFromList(question);
+        },
+        "data-position": "bottom",
+        "data-tooltip": "Remover Quest\xE3o da Lista"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "material-icons"
+      }, "delete")));
+    });
+  } else {
+    addedQuestionsContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+      className: "collection-item"
+    }, "Nenhuma Quest\xE3o foi adicionada");
   }
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: _QuestionBuilder_scss__WEBPACK_IMPORTED_MODULE_7___default.a.QuestionBuilder
-  }, uiContent);
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.ListBuilder
+  }, error ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_ErrorMessage_ErrorMessage__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    message: error.message
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "Informa\xE7\xF5es sobre a Lista"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "title"
+  }, "T\xEDtulo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    id: "title",
+    value: title,
+    onChange: function onChange(event) {
+      return handleInfoInputs(event, setTitle);
+    },
+    placeholder: "T\xEDtulo da Lista",
+    className: "browser-default ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Input)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "description"
+  }, "Descri\xE7\xE3o"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("textarea", {
+    id: "description",
+    value: description,
+    onChange: function onChange(event) {
+      return handleInfoInputs(event, setDescription);
+    },
+    placeholder: "Descri\xE7\xE3o da Lista",
+    className: "materialize-textarea ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Input)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.FormGroup
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: ""
+  }, "Mat\xE9ria"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Select,
+    value: listSubject,
+    onChange: function onChange(event) {
+      return handleInfoInputs(event, setListSubject);
+    }
+  }, availableSubjects.map(function (subject) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      key: subject.key,
+      value: subject.value
+    }, subject.text);
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.FormGroup
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: ""
+  }, "Tags"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_InputTag_InputTag__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    tags: listTags,
+    setTags: setListTags
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "Adicionar Quest\xF5es"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.FormGroup
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: ""
+  }, "Procurar em"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Select,
+    value: searchFrom,
+    onChange: function onChange(event) {
+      return handleInputChange(event, setSearchFrom);
+    }
+  }, searchFromOptions.map(function (option) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      key: option.key,
+      value: option.value
+    }, option.text);
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.FormGroup
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: ""
+  }, "Mat\xE9ria"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_select__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Select,
+    value: questionSubject,
+    onChange: function onChange(event) {
+      return handleInputChange(event, setQuestionSubject);
+    }
+  }, availableSubjects.map(function (subject) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bit_mui_org_material_ui_menu_item__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      key: subject.key,
+      value: subject.value
+    }, subject.text);
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.FormGroup
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "tag"
+  }, "Tag"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    id: "tag",
+    placeholder: "Filtrar por tags",
+    className: "browser-default ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Input),
+    value: questionTag,
+    onChange: function onChange(event) {
+      return handleInputChange(event, setQuestionTag);
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.FormGroup
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "content"
+  }, "Enunciado"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    id: "content",
+    placeholder: "Filtrar pelo enunciado da Quest\xE3o",
+    className: "browser-default ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Input),
+    value: statement,
+    onChange: function onChange(event) {
+      return handleInputChange(event, setStatement);
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Total
+  }, "Total:", ' ', filteredQuestions.filter(function (question) {
+    return addedQuestions.findIndex(function (addedQuestion) {
+      return addedQuestion.id === question.id;
+    }) < 0;
+  }).length), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "collection"
+  }, filteredQuestionsContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UI_Paginator_Paginator__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    currentPage: paginationState.currentPage,
+    lastPage: paginationState.lastPage,
+    changePageHandler: handleChangePage
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "Quest\xF5es Adicionadas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: _ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Total
+  }, "Total: ", addedQuestions.length), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "collection"
+  }, addedQuestionsContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: handleCreateList,
+    className: "btn ".concat(_ListBuilder_scss__WEBPACK_IMPORTED_MODULE_4___default.a.CreateButton, " z-depth-0")
+  }, list ? 'Salvar' : 'Criar')));
 };
 
-QuestionBuilder.propTypes = {
-  question: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
-    alternativeA: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
-    alternativeB: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
-    alternativeC: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
-    alternativeD: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
-    alternativeE: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
-    content: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
-    correctAlternative: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+ListBuilder.propTypes = {
+  list: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
+    description: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
     id: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+    questions: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.array,
     subject: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
-      id: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any
+      id: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number
     }),
-    tags: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string
+    tags: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+    title: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string
   })
 };
-/* harmony default export */ __webpack_exports__["default"] = (QuestionBuilder);
+/* harmony default export */ __webpack_exports__["default"] = (ListBuilder);
 
 /***/ }),
 
-/***/ "./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.scss":
-/*!*****************************************************************************************!*\
-  !*** ./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.scss ***!
-  \*****************************************************************************************/
+/***/ "./resources/js/components/ListsContainer/ListBuilder/ListBuilder.scss":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/ListsContainer/ListBuilder/ListBuilder.scss ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--10-1!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./QuestionBuilder.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.scss");
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--11-1!../../../../../node_modules/postcss-loader/src??ref--11-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-3!./ListBuilder.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/ListsContainer/ListBuilder/ListBuilder.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -478,357 +669,6 @@ options.transform = transform
 options.insertInto = undefined;
 
 var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./resources/js/components/QuestionsContainer/QuestionEdit/QuestionEdit.js":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/QuestionsContainer/QuestionEdit/QuestionEdit.js ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _QuestionBuilder_QuestionBuilder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../QuestionBuilder/QuestionBuilder */ "./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _UI_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../UI/Spinner/Spinner */ "./resources/js/components/UI/Spinner/Spinner.js");
-/* harmony import */ var _UI_ErrorMessage_ErrorMessage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../UI/ErrorMessage/ErrorMessage */ "./resources/js/components/UI/ErrorMessage/ErrorMessage.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-var QuestionEdit = function QuestionEdit() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
-      _useState2 = _slicedToArray(_useState, 2),
-      isLoading = _useState2[0],
-      setIsLoading = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
-      _useState4 = _slicedToArray(_useState3, 2),
-      question = _useState4[0],
-      setQuestion = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
-      _useState6 = _slicedToArray(_useState5, 2),
-      error = _useState6[0],
-      setError = _useState6[1];
-
-  var match = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["useRouteMatch"])();
-  var questionId = match.params.question;
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    setIsLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("questions/".concat(questionId)).then(function (response) {
-      setQuestion(response.data.data);
-    })["catch"](function (error) {
-      console.error(error);
-      setError(error);
-    })["finally"](function () {
-      setIsLoading(false);
-    });
-  }, [axios__WEBPACK_IMPORTED_MODULE_2___default.a, questionId]);
-  var content = null;
-
-  if (isLoading) {
-    content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_3__["default"], null);
-  } else if (question) {
-    content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_QuestionBuilder_QuestionBuilder__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      question: question
-    });
-  } else if (error) {
-    content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_ErrorMessage_ErrorMessage__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      message: error.message
-    });
-  }
-
-  return content;
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (QuestionEdit);
-
-/***/ }),
-
-/***/ "./resources/js/components/QuestionsContainer/QuestionsContainer.js":
-/*!**************************************************************************!*\
-  !*** ./resources/js/components/QuestionsContainer/QuestionsContainer.js ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _QuestionsContainer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuestionsContainer.scss */ "./resources/js/components/QuestionsContainer/QuestionsContainer.scss");
-/* harmony import */ var _QuestionsContainer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_QuestionsContainer_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _UI_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../UI/Spinner/Spinner */ "./resources/js/components/UI/Spinner/Spinner.js");
-/* harmony import */ var _QuestionEdit_QuestionEdit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./QuestionEdit/QuestionEdit */ "./resources/js/components/QuestionsContainer/QuestionEdit/QuestionEdit.js");
-/* harmony import */ var _Sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Sidebar/Sidebar */ "./resources/js/components/Sidebar/Sidebar.js");
-
-
-
-
-
-
-var QuestionsCollection = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
-  return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./QuestionsCollection/QuestionsCollection */ "./resources/js/components/QuestionsContainer/QuestionsCollection/QuestionsCollection.js"));
-});
-var QuestionBuilder = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
-  return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ./QuestionBuilder/QuestionBuilder */ "./resources/js/components/QuestionsContainer/QuestionBuilder/QuestionBuilder.js"));
-});
-
-var QuestionsContainer = function QuestionsContainer() {
-  var searchInputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useHistory"])();
-
-  var searchHandler = function searchHandler(event) {
-    event.preventDefault();
-    var query = searchInputRef.current.value;
-
-    if (query && query.trim()) {
-      history.push("/questions?query=".concat(query));
-    } else {
-      history.push('/questions');
-    }
-  };
-
-  var links = [{
-    path: '/questions',
-    text: 'Minhas Questões',
-    icon: 'person',
-    iconColor: 'blue-text'
-  }, {
-    path: '/questions/bookmarks',
-    text: 'Favoritos',
-    icon: 'star',
-    iconColor: 'yellow-text text-darken-1'
-  }, {
-    path: '/questions/answers',
-    text: 'Questões Respondidas',
-    icon: 'check',
-    iconColor: 'green-text'
-  }];
-  var createLink = {
-    path: '/questions/create',
-    text: 'Nova Questão'
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "".concat(_QuestionsContainer_scss__WEBPACK_IMPORTED_MODULE_1___default.a.QuestionsContainer, " container")
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/questions/:question/edit",
-    render: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Editar Quest\xE3o");
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/questions/bookmarked",
-    render: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Favoritos");
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/questions/answered",
-    render: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Quest\xF5es Respondidas");
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/questions/create",
-    render: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Nova Quest\xE3o");
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/questions",
-    render: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Minhas Quest\xF5es");
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col s12 m5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    links: links,
-    createLink: createLink,
-    searchHandler: searchHandler,
-    searchInputRef: searchInputRef,
-    searchPlaceholder: "Procurar Quest\xF5es"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col s12 m7 card ".concat(_QuestionsContainer_scss__WEBPACK_IMPORTED_MODULE_1___default.a.Container)
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/questions/:question/edit",
-    render: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], {
-        fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_QuestionEdit_QuestionEdit__WEBPACK_IMPORTED_MODULE_4__["default"], null));
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/questions/create",
-    render: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], {
-        fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(QuestionBuilder, null));
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/questions",
-    render: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], {
-        fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UI_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(QuestionsCollection, null));
-    }
-  })))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (QuestionsContainer);
-
-/***/ }),
-
-/***/ "./resources/js/components/QuestionsContainer/QuestionsContainer.scss":
-/*!****************************************************************************!*\
-  !*** ./resources/js/components/QuestionsContainer/QuestionsContainer.scss ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--10-1!../../../../node_modules/postcss-loader/src??ref--10-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./QuestionsContainer.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/QuestionsContainer/QuestionsContainer.scss");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./resources/js/components/Sidebar/Sidebar.js":
-/*!****************************************************!*\
-  !*** ./resources/js/components/Sidebar/Sidebar.js ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Sidebar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Sidebar.scss */ "./resources/js/components/Sidebar/Sidebar.scss");
-/* harmony import */ var _Sidebar_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Sidebar_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-
-
-
-
-
-var Sidebar = function Sidebar(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: _Sidebar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.Sidebar
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-    className: "collection"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "collection-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
-    onSubmit: props.searchHandler,
-    className: _Sidebar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.SearchBox
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-    type: "text",
-    placeholder: props.searchPlaceholder,
-    ref: props.searchInputRef
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: "btn ".concat(_Sidebar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.SearchButton, " z-depth-0")
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-    className: "material-icons"
-  }, "search")))), props.links.map(function (link) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
-      key: link.path,
-      to: link.path,
-      className: "collection-item ".concat(_Sidebar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.Option),
-      activeClassName: _Sidebar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.Active,
-      exact: true
-    }, link.text, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "secondary-content ".concat(link.iconColor)
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-      className: "material-icons"
-    }, link.icon)));
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "my-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-    to: props.createLink.path,
-    className: "btn ".concat(_Sidebar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.CreateButton, " z-depth-0")
-  }, props.createLink.text)));
-};
-
-Sidebar.propTypes = {
-  createLink: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
-    path: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
-    text: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string
-  }),
-  links: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.array,
-  searchHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
-  searchInputRef: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
-  searchPlaceholder: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string
-};
-/* harmony default export */ __webpack_exports__["default"] = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.memo(Sidebar));
-
-/***/ }),
-
-/***/ "./resources/js/components/Sidebar/Sidebar.scss":
-/*!******************************************************!*\
-  !*** ./resources/js/components/Sidebar/Sidebar.scss ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--10-1!../../../../node_modules/postcss-loader/src??ref--10-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./Sidebar.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Sidebar/Sidebar.scss");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -954,7 +794,7 @@ InputTag.propTypes = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--10-1!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./InputTag.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/InputTag/InputTag.scss");
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--11-1!../../../../../node_modules/postcss-loader/src??ref--11-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-3!./InputTag.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/InputTag/InputTag.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -976,10 +816,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./resources/js/components/UI/MyCKEditor/MyCKEditor.js":
-/*!*************************************************************!*\
-  !*** ./resources/js/components/UI/MyCKEditor/MyCKEditor.js ***!
-  \*************************************************************/
+/***/ "./resources/js/components/UI/Paginator/Paginator.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/UI/Paginator/Paginator.js ***!
+  \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -989,57 +829,80 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ckeditor/ckeditor5-react */ "./node_modules/@ckeditor/ckeditor5-react/dist/ckeditor.js");
-/* harmony import */ var _ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ckeditor/ckeditor5-build-classic */ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js");
-/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Paginator_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Paginator.scss */ "./resources/js/components/UI/Paginator/Paginator.scss");
+/* harmony import */ var _Paginator_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Paginator_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 
+var Paginator = function Paginator(props) {
+  if (props.lastPage <= 1) {
+    return null;
+  }
 
-var MyCKEditor = function MyCKEditor(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_3___default.a,
-    data: props.content,
-    onChange: function onChange(event, editor) {
-      props.setData(editor.getData());
-    },
-    config: {
-      toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|', 'blockQuote', 'imageUpload', 'imageStyle:full', 'imageStyle:side', 'insertTable', '|', 'undo', 'redo'],
-      language: 'pt',
-      heading: {
-        options: [{
-          model: 'paragraph',
-          title: 'Parágrafo',
-          "class": 'ck-heading_paragraph'
-        }, {
-          model: 'heading1',
-          view: 'h2',
-          title: 'Título 1',
-          "class": 'ck-heading_heading1'
-        }, {
-          model: 'heading2',
-          view: 'h3',
-          title: 'Título 2',
-          "class": 'ck-heading_heading2'
-        }, {
-          model: 'heading3',
-          view: 'h4',
-          title: 'Título 3',
-          "class": 'ck-heading_heading3'
-        }]
-      },
-      height: '400px'
+  var buttons = [];
+
+  var _loop = function _loop(i) {
+    var classes = '';
+
+    if (props.currentPage === i) {
+      classes = _Paginator_scss__WEBPACK_IMPORTED_MODULE_2___default.a.Active;
     }
-  });
+
+    buttons.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      key: i,
+      onClick: function onClick() {
+        return props.changePageHandler(i);
+      },
+      className: classes
+    }, i));
+  };
+
+  for (var i = 1; i <= props.lastPage; i++) {
+    _loop(i);
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _Paginator_scss__WEBPACK_IMPORTED_MODULE_2___default.a.Paginator
+  }, buttons);
 };
 
-MyCKEditor.propTypes = {
-  content: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
-  setData: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func
+Paginator.propTypes = {
+  changePageHandler: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  currentPage: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  lastPage: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any
 };
-/* harmony default export */ __webpack_exports__["default"] = (MyCKEditor);
+/* harmony default export */ __webpack_exports__["default"] = (Paginator);
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/Paginator/Paginator.scss":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/UI/Paginator/Paginator.scss ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--11-1!../../../../../node_modules/postcss-loader/src??ref--11-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-3!./Paginator.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/Paginator/Paginator.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 

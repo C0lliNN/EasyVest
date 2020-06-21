@@ -2091,7 +2091,7 @@ module.exports = {
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/App.scss":
 /*!******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/App.scss ***!
+  !*** ./node_modules/css-loader??ref--11-1!./node_modules/postcss-loader/src??ref--11-2!./node_modules/sass-loader/dist/cjs.js??ref--11-3!./resources/js/components/App.scss ***!
   \******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2112,7 +2112,7 @@ exports.locals = {
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/FixedSpinner/FixedSpinner.scss":
 /*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/UI/FixedSpinner/FixedSpinner.scss ***!
+  !*** ./node_modules/css-loader??ref--11-1!./node_modules/postcss-loader/src??ref--11-2!./node_modules/sass-loader/dist/cjs.js??ref--11-3!./resources/js/components/UI/FixedSpinner/FixedSpinner.scss ***!
   \*******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2133,7 +2133,7 @@ exports.locals = {
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/Spinner/Spinner.scss":
 /*!*********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--10-1!./node_modules/postcss-loader/src??ref--10-2!./node_modules/sass-loader/dist/cjs.js??ref--10-3!./resources/js/components/UI/Spinner/Spinner.scss ***!
+  !*** ./node_modules/css-loader??ref--11-1!./node_modules/postcss-loader/src??ref--11-2!./node_modules/sass-loader/dist/cjs.js??ref--11-3!./resources/js/components/UI/Spinner/Spinner.scss ***!
   \*********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -35467,16 +35467,16 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 axios__WEBPACK_IMPORTED_MODULE_4___default.a.defaults.baseURL = '/api';
 axios__WEBPACK_IMPORTED_MODULE_4___default.a.defaults.headers.common['Authorization'] = 'Bearer ' + document.querySelector('#api_token').value;
 var QuestionsContainer = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
-  return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ./QuestionsContainer/QuestionsContainer */ "./resources/js/components/QuestionsContainer/QuestionsContainer.js"));
+  return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./QuestionsContainer/QuestionsContainer */ "./resources/js/components/QuestionsContainer/QuestionsContainer.js"));
 });
 var QuestionViewer = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! ./QuestionsContainer/QuestionViewer/QuestionViewer */ "./resources/js/components/QuestionsContainer/QuestionViewer/QuestionViewer.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(4), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! ./QuestionsContainer/QuestionViewer/QuestionViewer */ "./resources/js/components/QuestionsContainer/QuestionViewer/QuestionViewer.js"));
 });
 var ListsContainer = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
-  return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ./ListsContainer/ListsContainer */ "./resources/js/components/ListsContainer/ListsContainer.js"));
+  return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./ListsContainer/ListsContainer */ "./resources/js/components/ListsContainer/ListsContainer.js"));
 });
 var ListViewer = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! ./ListsContainer/ListViewer/ListViewer */ "./resources/js/components/ListsContainer/ListViewer/ListViewer.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(4), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ./ListsContainer/ListViewer/ListViewer */ "./resources/js/components/ListsContainer/ListViewer/ListViewer.js"));
 });
 
 var App = function App() {
@@ -35592,7 +35592,7 @@ var App = function App() {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--10-1!../../../node_modules/postcss-loader/src??ref--10-2!../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./App.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/App.scss");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--11-1!../../../node_modules/postcss-loader/src??ref--11-2!../../../node_modules/sass-loader/dist/cjs.js??ref--11-3!./App.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/App.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -35650,7 +35650,7 @@ var FixedSpinner = function FixedSpinner() {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--10-1!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./FixedSpinner.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/FixedSpinner/FixedSpinner.scss");
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--11-1!../../../../../node_modules/postcss-loader/src??ref--11-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-3!./FixedSpinner.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/FixedSpinner/FixedSpinner.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -35706,7 +35706,7 @@ var Spinner = function Spinner() {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--10-1!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--10-3!./Spinner.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/Spinner/Spinner.scss");
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--11-1!../../../../../node_modules/postcss-loader/src??ref--11-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-3!./Spinner.scss */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/UI/Spinner/Spinner.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -35773,6 +35773,17 @@ react_dom__WEBPACK_IMPORTED_MODULE_0___default.a.render( /*#__PURE__*/react__WEB
 
 /***/ }),
 
+/***/ "./resources/sass/dashboard.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/dashboard.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/form.scss":
 /*!**********************************!*\
   !*** ./resources/sass/form.scss ***!
@@ -35818,9 +35829,9 @@ react_dom__WEBPACK_IMPORTED_MODULE_0___default.a.render( /*#__PURE__*/react__WEB
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/index.js ./resources/sass/home.scss ./resources/sass/header.scss ./resources/sass/form.scss ./resources/sass/profile.scss ***!
-  \******************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/index.js ./resources/sass/home.scss ./resources/sass/header.scss ./resources/sass/form.scss ./resources/sass/profile.scss ./resources/sass/dashboard.scss ***!
+  \**************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35828,7 +35839,8 @@ __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\
 __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\home.scss */"./resources/sass/home.scss");
 __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\header.scss */"./resources/sass/header.scss");
 __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\form.scss */"./resources/sass/form.scss");
-module.exports = __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\profile.scss */"./resources/sass/profile.scss");
+__webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\profile.scss */"./resources/sass/profile.scss");
+module.exports = __webpack_require__(/*! D:\Estudo\Tecnologia da Informacao\Portifolio\easy-vest\resources\sass\dashboard.scss */"./resources/sass/dashboard.scss");
 
 
 /***/ })

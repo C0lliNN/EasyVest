@@ -17,6 +17,7 @@ mix
   .sass('resources/sass/header.scss', 'public/css')
   .sass('resources/sass/form.scss', 'public/css')
   .sass('resources/sass/profile.scss', 'public/css')
+  .sass('resources/sass/dashboard.scss', 'public/css')
   .react('resources/js/index.js', 'public/js')
   .reactCSSModules()
   .webpackConfig({

@@ -77,7 +77,7 @@ const QuestionsContainer = () => {
             searchPlaceholder="Procurar Questões"
           />
         </div>
-        <div className={`col s12 m7 card ${styles.Container}`}>
+        <div className={`col s12 m7 ${styles.Container}`}>
           <Switch>
             <Route
               path="/questions/:question/edit"

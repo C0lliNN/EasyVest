@@ -101,7 +101,7 @@ class ListsController extends Controller {
     public function answers() {
         $user = User::findOrFail(Auth::id());
         return ListResource::collection(
-            $user->answeredQuestions()->paginate(self::RECORDS_PER_PAGE)
+            $user->answeredLists()->paginate(self::RECORDS_PER_PAGE)
         );
     }
 }

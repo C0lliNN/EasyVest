@@ -1,0 +1,38 @@
+@use 'header';
+@use 'mixins';
+@use 'variables';
+
+.dashboard {
+  @include mixins.block;
+  h2 {
+    font-size: variables.$font-size2;
+    font-weight: variables.$font-weight2;
+    text-align: center;
+    color: variables.$indigo;
+  }
+
+  h3 {
+    font-size: variables.$font-size3;
+  }
+
+  .icon-container {
+    background-color: variables.$white3;
+    color: variables.$gray;
+  }
+
+  .card-content {
+    p {
+      margin: 20px auto;
+    }
+  }
+
+  .card-action {
+    text-align: center;
+    a {
+      color: variables.$blue !important;
+      &:hover {
+        color: variables.$darken-blue !important;
+      }
+    }
+  }
+}

@@ -71,7 +71,7 @@ const ListsContainer = () => {
             searchPlaceholder="Procurar Listas"
           />
         </div>
-        <div className={`col s12 m7 card ${styles.Container}`}>
+        <div className={`col s12 m7`}>
           <Switch>
             <Route
               path="/lists/:list/edit"
