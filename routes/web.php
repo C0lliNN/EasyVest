@@ -29,7 +29,7 @@ Route::middleware(['auth'])->group(function () {
         'profile.show'
     );
     Route::view('questions/{path?}', 'questions')->name('questions');
-    Route::view('questions/{path?}/{path2?}', 'questions')->name('questions');
+    Route::view('questions/{path?}/{path2?}', 'questions')->name('questions2');
     Route::view('lists/{path?}', 'lists')->name('lists');
-    Route::view('lists/{path?}/{path2?}', 'lists')->name('lists');
+    Route::view('lists/{path?}/{path2?}', 'lists')->name('lists2');
 });
