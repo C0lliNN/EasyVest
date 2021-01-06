@@ -34,7 +34,7 @@
         "@ckeditor/ckeditor5-image": "^19.0.1",
         "@ckeditor/ckeditor5-react": "^2.1.0",
         "@ckeditor/ckeditor5-upload": "^19.0.1",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "prop-types": "^15.7.2",
         "react": "^16.13.1",
         "react-avatar": "^3.9.7",
