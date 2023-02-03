@@ -41,7 +41,7 @@ class ListsController extends Controller {
         $list->questions()->attach($request->questions);
 
         $user = User::findOrFail(Auth::id());
-
+        
         $user->myLists()->attach($list->id, ['relation' => 'owner']);
 
         return response(200);

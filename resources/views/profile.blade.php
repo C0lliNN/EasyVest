@@ -36,7 +36,7 @@ EasyVest - {{ $user->name }}
 
             <div class="img-container col s3 center">
                 @if ($user->image)
-                <img src="{{ asset($user->image) }}" alt="{{ $user->name }}">
+                <img src="{{ $user->image }}" alt="{{ $user->name }}">
                 @else
                 <i class="material-icons">account_circle</i>
                 @endif

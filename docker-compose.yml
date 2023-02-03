@@ -1,0 +1,45 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'easy_vest'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - db:/var/lib/mysql
+  cache:
+    image: redis
+    ports:
+      - "6379:6379"
+    volumes:
+     - cache:/data
+
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - DEFAULT_REGION=us-east-1
+      - SERVICES=s3,ses
+      - DEBUG=1
+      - DATA_DIR=/data
+      - START_WEB=1
+    volumes:
+      - ./scripts/setup_localstack.sh:/docker-entrypoint-initaws.d/init.sh
+      - ./.tmp:/var/lib/localstack
+      - ./.data:/data
+
+
+volumes:
+  db:
+    driver: local
+  cache:
+    driver: local
